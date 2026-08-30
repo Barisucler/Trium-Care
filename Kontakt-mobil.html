@@ -109,21 +109,25 @@
   </nav>
 
   <!-- INTRO -->
-  <section style="padding:64px 64px 64px 64px;text-align:center;">
-    <div style="color:#3f9e8c;font-weight:700;font-size:14px;letter-spacing:1px;margin-bottom:16px;">Kontakt</div>
-    <h1 style="font-family:'Playfair Display',serif;font-weight:600;font-size:44px;margin:0 0 24px;">Kom i kontakt med os</h1>
-    <p style="font-size:18px;color:#4b5563;max-width:640px;margin:0 auto;">Book en tid direkte i kalenderen herunder – det er nemt og tager kun et minut.</p>
+  <section style="background:#fff;padding:44px 24px 40px;text-align:center;font-family:'Poppins',sans-serif;">
+    <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:32px;line-height:1.1;letter-spacing:-1px;margin:0 0 12px;color:#182839;">Kom i kontakt med os</h1>
+    <p style="font-size:15px;line-height:1.5;color:#6e6e73;max-width:520px;margin:0 auto;">Diskret, online og uden ventetid — hele forløbet foregår hjemmefra.</p>
   </section>
 
   <!-- KONTAKTMULIGHEDER -->
-  <section style="padding:64px 64px 64px 64px;">
+  <div style="height:12px;background:#fff;"></div>
+  <section style="background:#fff;padding:32px 24px 48px;">
     <div style="max-width:640px;margin:0 auto;">
 
       <!-- KONTAKTFORMULAR -->
       <div style="background:#fff;border-radius:10px;padding:28px 24px 30px;box-shadow:0 8px 30px rgba(17,24,39,0.06);font-family:'Poppins',sans-serif;">
         <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;line-height:1.15;letter-spacing:-0.6px;margin:0 0 6px;color:#182839;">Få en gratis vurdering</h3>
         <p style="font-size:15px;line-height:1.5;color:#6e6e73;margin:0 0 24px;">Udfyld formularen, så kontakter en læge dig inden for én hverdag.</p>
-        <form onSubmit="{{ submitForm }}" style="display:flex;flex-direction:column;gap:16px;">
+        <form action="https://formsubmit.co/info@triumcare.dk" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+          <input type="hidden" name="_subject" value="Ny henvendelse fra triumcare.dk">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://triumcare.dk/Tak.html">
           <label style="display:flex;flex-direction:column;gap:6px;">
             <span style="font-size:13px;font-weight:600;color:#182839;">Navn</span>
             <input type="text" name="navn" required="required" placeholder="Dit fulde navn" style="font-family:'Poppins',sans-serif;font-size:15px;color:#182839;background:#f7f6f4;border:1px solid #e5e5e3;border-radius:12px;padding:13px 14px;outline:none;width:100%;box-sizing:border-box;">
