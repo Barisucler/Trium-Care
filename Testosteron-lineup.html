@@ -42,7 +42,7 @@
 
   <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
-      <a href="Forside.html" style="display:flex;align-items:center;"><img src="assets/trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
+      <a href="Forside.html" style="display:flex;align-items:center;"><img src="trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
       <div style="display:flex;align-items:center;justify-content:center;gap:0;flex:1;">
         <a href="Forside.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
         <a href="Forside.html#haartab" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Behandlinger</a>
@@ -237,10 +237,10 @@ class Component extends DCLogic {
         { name: 'Testogel (gel)', rows: [ { label: 'Form', value: 'Gel på huden' }, { label: 'Dosering', value: '1 gang dagligt' }, { label: 'Virkning', value: 'Stabile niveauer' }, { label: 'Justering', value: 'Let at tilpasse' }, { label: 'Kontrol', value: 'Blodprøve hver 3.-6. md.' } ] }
       ],
       rail: [
-        { name: 'Finasterid hårserum', scale: 'scale(1.05)', img: 'assets/haarserum-rail-new2.png', href: 'Finasterid-haarserum.html' },
-        { name: 'Dutasterid hårgel', scale: 'scale(1.15)', img: 'assets/dutasterid-haargel-rail-new.png', href: 'Dutasterid-haargel.html' },
-        { name: 'Finasterid tabletter', scale: 'scale(1.12)', img: 'assets/finasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid.html' },
-        { name: 'Dutasterid tabletter', scale: 'scale(1.12)', img: 'assets/dutasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid.html' }
+        { name: 'Finasterid hårserum', scale: 'scale(1.05)', img: 'haarserum-rail-new2.png', href: 'Finasterid-haarserum.html' },
+        { name: 'Dutasterid hårgel', scale: 'scale(1.15)', img: 'dutasterid-haargel-rail-new.png', href: 'Dutasterid-haargel.html' },
+        { name: 'Finasterid tabletter', scale: 'scale(1.12)', img: 'finasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid.html' },
+        { name: 'Dutasterid tabletter', scale: 'scale(1.12)', img: 'dutasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid.html' }
       ],
       benefitsRailRef: this.benefitsRail,
       knowRailRef: this.knowRail,
@@ -254,7 +254,7 @@ class Component extends DCLogic {
         { eyebrow: 'Fleksibelt forløb', title: 'Skift eller stop, når du vil.', desc: 'Ingen binding. Juster dosis, skift produkt eller sæt behandlingen på pause.', icon: this.icon('flex') }
       ],
       cards: this.withImgEl([
-        { name: 'Testosterongel', scale: 'scale(1.4)', tag: 'Mest fleksible', desc: 'Påføres dagligt på huden. Stabile niveauer og let at justere dosis undervejs.', img: 'assets/testogel-lineup-new2.png', fit: 'contain', bg: '#e2e7ea', href: 'Kontakt.html' }
+        { name: 'Testosterongel', scale: 'scale(1.4)', tag: 'Mest fleksible', desc: 'Påføres dagligt på huden. Stabile niveauer og let at justere dosis undervejs.', img: 'testogel-lineup-new2.png', fit: 'contain', bg: '#e2e7ea', href: 'Kontakt.html' }
       ])
     };
   }

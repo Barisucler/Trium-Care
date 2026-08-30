@@ -85,7 +85,7 @@
 
   <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
-      <a href="Forside.html" style="display:flex;align-items:center;"><img src="assets/trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
+      <a href="Forside.html" style="display:flex;align-items:center;"><img src="trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
       <div style="display:{{ navDesktopDisplay }};align-items:center;justify-content:center;gap:0;flex:1;">
         <a href="Forside.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
         <div onMouseEnter="{{ showMegaOn }}" onMouseLeave="{{ showMegaOff }}" style="position:relative;">
@@ -136,7 +136,7 @@
 
   <!-- HERO -->
   <section style="position:relative;padding:{{ heroPadding }};min-height:{{ heroMinHeight }};display:flex;align-items:center;overflow:hidden;background:#d9d6d2;">
-    <img src="assets/haarserum-haargel-hero-v2.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:bottom right;z-index:0;opacity:{{ heroImgOpacity }};">
+    <img src="haarserum-haargel-hero-v2.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:bottom right;z-index:0;opacity:{{ heroImgOpacity }};">
     <div style="position:absolute;inset:0;background:{{ heroBgOverlay }};z-index:1;"></div>
     <div style="position:relative;z-index:2;max-width:{{ heroMaxWidth }};">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px;"><div style="display:inline-flex;align-items:center;background:#fff;border-radius:999px;padding:9px 20px;font-weight:600;font-size:13px;letter-spacing:1px;color:#374151;">HÅRTAB</div><div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:9px 20px;font-weight:600;font-size:13px;color:#374151;"><svg width="16" height="12" viewBox="0 0 28 20" style="flex-shrink:0;border-radius:2px;"><rect width="28" height="20" fill="#c8102e"></rect><rect x="9" width="4" height="20" fill="#fff"></rect><rect y="8" width="28" height="4" fill="#fff"></rect></svg>Autoriserede danske læger</div></div>
@@ -186,7 +186,7 @@
       <a href="Finasterid-haarserum.html" style="background:#ececea;border-radius:24px;display:grid;grid-template-rows:subgrid;grid-row:1 / span 4;text-align:center;box-shadow:0 8px 30px rgba(30,41,59,0.05);transition:transform .2s ease,box-shadow .2s ease;color:inherit;overflow:hidden;position:relative;scroll-snap-align:{{ twoColSnapAlign }};" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px rgba(30,41,59,0.09);">
         <span style="position:absolute;top:16px;left:16px;background:#3f9e8c;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;z-index:1;">Mest populære</span>
         <div style="width:100%;height:{{ twoCardImgH }};display:flex;align-items:center;justify-content:center;">
-          <img src="assets/haarserum-bottle.png" alt="Finasterid hårserum" style="width:100%;height:100%;object-fit:contain;display:block;transform:scale(0.7);">
+          <img src="haarserum-bottle.png" alt="Finasterid hårserum" style="width:100%;height:100%;object-fit:contain;display:block;transform:scale(0.7);">
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:{{ twoCardTitleSize }};margin:{{ twoCardTitleTopMB }} {{ twoCardSidePad }} 8px;color:#1e293b;">Finasterid hårserum</h3>
         <p style="color:#6b7280;font-size:{{ twoCardDescSize }};line-height:1.4;margin:0 {{ twoCardSidePad }} 14px;">Finasterid + minoxidil i én lokal behandling.</p>
@@ -194,7 +194,7 @@
       </a>
       <a href="Dutasterid-haargel.html" style="background:#ececea;border-radius:24px;display:grid;grid-template-rows:subgrid;grid-row:1 / span 4;text-align:center;box-shadow:0 8px 30px rgba(30,41,59,0.05);transition:transform .2s ease,box-shadow .2s ease;color:inherit;overflow:hidden;position:relative;scroll-snap-align:{{ twoColSnapAlign }};" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px rgba(30,41,59,0.09);">
         <div style="width:100%;height:{{ twoCardImgH }};display:flex;align-items:center;justify-content:center;">
-          <img src="assets/dutasterid-haargel-jar-crop.png" alt="Dutasterid hårgel" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="dutasterid-haargel-jar-crop.png" alt="Dutasterid hårgel" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:{{ twoCardTitleSize }};margin:{{ twoCardTitleTopMB }} {{ twoCardSidePad }} 8px;color:#1e293b;">Dutasterid hårgel</h3>
         <p style="color:#6b7280;font-size:{{ twoCardDescSize }};line-height:1.4;margin:0 {{ twoCardSidePad }} 14px;">Kraftigere effekt, stadig lokal behandling.</p>
@@ -474,8 +474,8 @@ class Component extends DCLogic {
     }
 
     const testimonials = [
-      { title: 'Jeg er utrolig glad for mit resultat', quote: '"Jeg begyndte min behandling hos Trium Care for 6 måneder siden, og forskellen er virkelig mærkbar. Mit hår føles tykkere, og jeg har fået meget mere selvtillid tilbage."', name: 'Yakup, Trium Care kunde', beforeImg: 'assets/before-photo-real.jpg', afterImg: 'assets/after-photo-real.jpg', afterLabel: 'Efter 6 måneder' },
-      { title: 'Det har givet mig selvtilliden tilbage', quote: '"Jeg var skeptisk i starten, men efter 8 måneder kan jeg virkelig se forskel i hårtætheden. Processen har været nem og lægerne har været gode til at følge op."', name: 'Anders, Trium Care kunde', beforeImg: 'assets/before-photo-case2.jpg', afterImg: 'assets/after-photo-case2.jpg', afterLabel: 'Efter 1 måned' },
+      { title: 'Jeg er utrolig glad for mit resultat', quote: '"Jeg begyndte min behandling hos Trium Care for 6 måneder siden, og forskellen er virkelig mærkbar. Mit hår føles tykkere, og jeg har fået meget mere selvtillid tilbage."', name: 'Yakup, Trium Care kunde', beforeImg: 'before-photo-real.jpg', afterImg: 'after-photo-real.jpg', afterLabel: 'Efter 6 måneder' },
+      { title: 'Det har givet mig selvtilliden tilbage', quote: '"Jeg var skeptisk i starten, men efter 8 måneder kan jeg virkelig se forskel i hårtætheden. Processen har været nem og lægerne har været gode til at følge op."', name: 'Anders, Trium Care kunde', beforeImg: 'before-photo-case2.jpg', afterImg: 'after-photo-case2.jpg', afterLabel: 'Efter 1 måned' },
     ];
     const tIndex = this.state.testimonialIndex;
     const testimonial = testimonials[tIndex];

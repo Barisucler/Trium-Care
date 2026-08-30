@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8">
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trium Care</title>
 <script>
-(function(){
-  var isMobile = window.innerWidth <= 860;
-  window.location.replace(isMobile ? "Forside-mobil.html" : "Forside.html");
-})();
+  (function () {
+    var isMobile = window.matchMedia('(max-width: 860px)').matches
+      || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    window.location.replace(isMobile ? 'Forside-mobil.html' : 'Forside.html');
+  })();
 </script>
-</head><body></body></html>
+<meta http-equiv="refresh" content="0;url=Forside.html">
+</head>
+<body style="margin:0;font-family:'Poppins',-apple-system,sans-serif;background:#fff;color:#182839;display:flex;align-items:center;justify-content:center;height:100vh;">
+<a href="Forside.html" style="color:#182839;font-weight:600;">Trium Care — gå til forsiden</a>
+</body>
+</html>
