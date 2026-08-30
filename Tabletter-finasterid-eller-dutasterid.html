@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>/* device-redirect */
+(function(){
+  try {
+    var TO_MOBILE = {"index.html":"Forside-mobil.html","Forside.html":"Forside-mobil.html","Haartab.html":"Haartab-lineup-mobil.html","Rejsningsbesvaer.html":"Rejsningsbesvaer-lineup-mobil.html","Cookiepolitik.html":"Cookiepolitik-mobil.html","Dutasterid-haargel.html":"Dutasterid-haargel-mobil.html","Dutasterid-tabletter.html":"Dutasterid-tabletter-mobil.html","Finasterid-haarserum.html":"Finasterid-haarserum-mobil.html","Finasterid-tabletter.html":"Finasterid-tabletter-mobil.html","Handelsbetingelser.html":"Handelsbetingelser-mobil.html","Kontakt.html":"Kontakt-mobil.html","Om-os.html":"Om-os-mobil.html","Privatlivspolitik.html":"Privatlivspolitik-mobil.html","Sildenafil.html":"Sildenafil-mobil.html","Tabletter-finasterid-eller-dutasterid.html":"Tabletter-finasterid-eller-dutasterid-mobil.html","Tadalafil.html":"Tadalafil-mobil.html"};
+    var TO_DESKTOP = {"Forside-mobil.html":"Forside.html","Haartab-lineup-mobil.html":"Haartab.html","Rejsningsbesvaer-lineup-mobil.html":"Rejsningsbesvaer.html","Cookiepolitik-mobil.html":"Cookiepolitik.html","Dutasterid-haargel-mobil.html":"Dutasterid-haargel.html","Dutasterid-tabletter-mobil.html":"Dutasterid-tabletter.html","Finasterid-haarserum-mobil.html":"Finasterid-haarserum.html","Finasterid-tabletter-mobil.html":"Finasterid-tabletter.html","Handelsbetingelser-mobil.html":"Handelsbetingelser.html","Kontakt-mobil.html":"Kontakt.html","Om-os-mobil.html":"Om-os.html","Privatlivspolitik-mobil.html":"Privatlivspolitik.html","Sildenafil-mobil.html":"Sildenafil.html","Tabletter-finasterid-eller-dutasterid-mobil.html":"Tabletter-finasterid-eller-dutasterid.html","Tadalafil-mobil.html":"Tadalafil.html","Avanafil-mobil.html":"Sildenafil.html","Testosteron-lineup-mobil.html":"Forside.html"};
+    var isMobile = window.innerWidth <= 860;
+    var file = (window.location.pathname.split('/').pop() || 'index.html');
+    var target = isMobile ? TO_MOBILE[file] : TO_DESKTOP[file];
+    if (target && target !== file) {
+      window.location.replace(target + window.location.search + window.location.hash);
+    }
+  } catch(e) {}
+})();
+</script>
+
+
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #fff; font-family: 'Poppins', sans-serif; }
+  a { color: #1e293b; text-decoration: none; }
+  a:hover { color: #2f5d4f; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden !important; margin: 0; }
+  @media (min-width: 861px) {
+    section > div, footer, article { max-width: 1100px; margin-left: auto !important; margin-right: auto !important; }
+    section, footer, article { padding-left: 48px !important; padding-right: 48px !important; }
+  }
+
+  @media (max-width: 860px) {
+    body section:not([id]) { padding-top: 16px !important; padding-bottom: 16px !important; }
+    [data-reveal="1"] [data-step-title]::before { content: "1. "; }
+    [data-reveal="2"] [data-step-title]::before { content: "2. "; }
+    [data-reveal="3"] [data-step-title]::before { content: "3. "; }
+    [data-reveal="4"] [data-step-title]::before { content: "4. "; }
+    nav > div:first-child { padding: 6px 16px !important; min-height: 44px !important; }
+    footer[style*="grid-template-columns:1.2fr"] { grid-template-columns: 1fr !important; gap: 40px !important; text-align: left; }
+    nav img { height: 30px !important; margin: 0 !important; }
+    section, footer, article { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: 32px !important; line-height: 1.2 !important; }
+    h2 { font-size: 26px !important; }
+    img { max-width: 100%; }
+    section, footer, article { padding-top: 40px !important; padding-bottom: 40px !important; }
+    table { max-width: 100%; }
+    div[style*="grid-template-columns:repeat(2"],
+    div[style*="grid-template-columns:repeat(3"],
+    div[style*="grid-template-columns:repeat(4"],
+    div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+    [data-reveal-line] { display: none !important; }
+    [data-reveal] { margin-bottom: 8px; }
+    div[style*="min-width:700px"] { min-width: 0 !important; width: 92vw !important; left: 50% !important; transform: translateX(-50%) !important; grid-template-columns: 1fr !important; padding: 28px !important; gap: 28px !important; }
+    div[style*="grid-template-columns:1.3fr 0.85fr 0.85fr"] { grid-template-columns: 1fr !important; }
+    button[style*="top:50%;left:12px"], button[style*="top:50%;right:12px"] { display: none !important; }
+    div[style*="background:#eef0ee;padding:48px"] { padding: 28px 24px !important; }
+    div[style*="grid-template-columns:1.3fr"] { grid-template-columns: 1fr !important; }
+  }
+</style>
+</helmet>
+
+<div style="font-family:'Poppins',sans-serif;color:#1e293b;">
+
+  <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
+      <a href="Forside.html" style="display:flex;align-items:center;"><img src="assets/trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
+      <div style="display:flex;align-items:center;justify-content:center;gap:0;flex:1;">
+        <a href="Forside.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
+        <a href="Forside.html#haartab" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Behandlinger</a>
+        <a href="Forside.html#saadan-fung" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Processen</a>
+        <a href="Forside.html#priser" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Priser</a>
+        <a href="Om-os.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Om os</a>
+      </div>
+      <button onClick="{{ toggleMobileMenu }}" style="display:none;background:none;border:none;cursor:pointer;padding:8px;align-items:center;justify-content:center;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
+      </button>
+    </div>
+    <sc-if value="{{ mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position:fixed;inset:0;background:#fff;z-index:200;overflow-y:auto;display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:center;justify-content:flex-end;padding:14px 20px;">
+          <button onClick="{{ closeMobileMenu }}" style="background:none;border:none;cursor:pointer;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
+          </button>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:8px 32px 40px;">
+        <a href="Forside.html" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Hjem</a>
+        <a href="Forside.html#behandlinger" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Behandlinger</a>
+        <a href="Forside.html#saadan-fung" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Processen</a>
+        <a href="Forside.html#priser" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Priser</a>
+        <a href="Om-os.html" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Om os</a>
+        </div>
+      </div>
+    </sc-if>
+  </nav>
+
+  <!-- HERO -->
+  <section style="position:relative;padding:{{ heroPadding }};min-height:{{ heroMinHeight }};display:flex;align-items:center;overflow:hidden;background:#f7f6f4;">
+    <img src="assets/haartab-hero-v4.png" alt="" style="position:absolute;bottom:0;right:0;width:{{ heroImgW }};height:auto;object-fit:contain;object-position:bottom right;z-index:0;opacity:{{ heroImgOpacity }};">
+    <div style="position:absolute;inset:0;background:{{ heroBgOverlay }};z-index:1;"></div>
+    <div style="position:relative;z-index:2;max-width:{{ heroMaxWidth }};">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px;"><div style="display:inline-flex;align-items:center;background:#fff;border-radius:999px;padding:9px 20px;font-weight:600;font-size:13px;letter-spacing:1px;color:#374151;">HÅRTAB</div><div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:9px 20px;font-weight:600;font-size:13px;color:#374151;"><svg width="16" height="12" viewBox="0 0 28 20" style="flex-shrink:0;border-radius:2px;"><rect width="28" height="20" fill="#c8102e"></rect><rect x="9" width="4" height="20" fill="#fff"></rect><rect y="8" width="28" height="4" fill="#fff"></rect></svg>Autoriserede danske læger</div></div>
+      <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.15;letter-spacing:-0.9px;margin:0 0 16px;color:#182839;">Effektiv behandling af hårtab i tabletform</h1>
+      <p style="font-size:15px;line-height:1.5;color:#6e6e73;margin:0 0 18px;max-width:480px;">Begge er effektive tabletbehandlinger mod hårtab. Vælg det produkt, der passer bedst til dig – en af vores læger hjælper dig gerne med at vurdere hvad der er rigtigt.</p>
+      <ul style="list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#182839;">
+        <sc-for list="{{ heroChecks }}" as="c" hint-placeholder-count="4">
+          <li style="display:flex;align-items:center;gap:12px;">
+            <span style="width:24px;height:24px;border-radius:50%;background:#182839;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="12" height="9" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            {{ c.label }}
+          </li>
+        </sc-for>
+      </ul>
+      <a href="Kontakt.html" style="display:inline-flex;justify-content:center;align-items:center;width:{{ heroCtaWidth }};max-width:360px;box-sizing:border-box;background:{{ cta1Bg }};border:{{ cta1Border }};transition:background 0.35s ease, border-color 0.35s ease, color 0.35s ease;font-weight:700;font-size:{{ heroCtaFontSize }};padding:{{ heroCtaPadding }};border-radius:999px;margin-bottom:24px;color:#fff;" onMouseEnter="{{ cta1Enter }}" onMouseLeave="{{ cta1Leave }}"><span style="display:inline-block;overflow:hidden;white-space:nowrap;max-width:{{ cta1TextMaxW }};opacity:{{ cta1TextOpacity }};margin-right:{{ cta1TextGap }};transition:max-width 0.4s ease, opacity 0.3s ease, margin-right 0.4s ease;">Kom i gang med behandlingen</span><span style="width:30px;height:30px;border-radius:50%;background:{{ cta1ArrowBg }};display:flex;align-items:center;justify-content:center;transition:background 0.35s ease;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#182839" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </a>
+    </div>
+  </section>
+
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- VALG -->
+  <section style="padding:40px 24px 44px;text-align:center;background:#f7f6f4;font-family:'Poppins',sans-serif;">
+    <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 28px;color:#182839;">Hvilket produkt passer til dig?</h2>
+    <div style="display:{{ twoColDisplay }};grid-template-columns:{{ twoColGrid }};gap:{{ twoColGap }};max-width:1100px;margin:0 auto;text-align:left;overflow-x:{{ twoColOverflowX }};scroll-snap-type:{{ twoColSnap }};padding:{{ twoColPad }};-webkit-overflow-scrolling:touch;">
+      <a href="Finasterid-tabletter.html" style="background:#ececea;border-radius:28px;padding:0;display:flex;flex-direction:{{ twoCardDir }};align-items:center;gap:0;box-shadow:0 8px 30px rgba(30,41,59,0.05);transition:transform .2s ease,box-shadow .2s ease;color:inherit;min-height:460px;overflow:hidden;position:relative;flex:{{ twoColCardFlex }};scroll-snap-align:{{ twoColSnapAlign }};" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px rgba(30,41,59,0.09);">
+        <span style="position:absolute;top:16px;left:16px;background:#182839;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;z-index:1;">Mest populære</span>
+        <div style="width:{{ twoCardImgW }};height:{{ twoCardImgH }};flex-shrink:0;align-self:stretch;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+          <img src="assets/finasterid-tablet-box-crop.png" alt="Finasterid tabletter" style="width:100%;height:100%;object-fit:contain;display:block;">
+        </div>
+        <div style="padding:32px 0;">
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;letter-spacing:-0.3px;margin:0 0 10px;color:#182839;">Finasterid tabletter</h3>
+          <p style="color:#4b5563;font-size:16px;line-height:1.5;margin:0 0 22px;">Den mest velafprøvede tabletbehandling mod arveligt hårtab.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:#182839;white-space:nowrap;">Læs mere <svg width="16" height="12" viewBox="0 0 16 12"><path d="M1 6h13M9 1l5 5-5 5" stroke="#3f9e8c" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </a>
+      <a href="Dutasterid-tabletter.html" style="background:#ececea;border-radius:28px;padding:0;display:flex;flex-direction:{{ twoCardDir }};align-items:center;gap:0;box-shadow:0 8px 30px rgba(30,41,59,0.05);transition:transform .2s ease,box-shadow .2s ease;color:inherit;min-height:460px;overflow:hidden;flex:{{ twoColCardFlex }};scroll-snap-align:{{ twoColSnapAlign }};" style-hover="transform:translateY(-4px);box-shadow:0 20px 44px rgba(30,41,59,0.09);">
+        <div style="width:{{ twoCardImgW }};height:{{ twoCardImgH }};flex-shrink:0;align-self:stretch;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+          <img src="assets/dutasterid-tabletter-box-v3-crop.png" alt="Dutasterid tabletter" style="width:100%;height:100%;object-fit:contain;display:block;">
+        </div>
+        <div style="padding:32px 0;">
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;letter-spacing:-0.3px;margin:0 0 10px;color:#182839;">Dutasterid tabletter</h3>
+          <p style="color:#4b5563;font-size:16px;line-height:1.5;margin:0 0 22px;">Kraftigere effekt, stadig i tabletform.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:#182839;white-space:nowrap;">Læs mere <svg width="16" height="12" viewBox="0 0 16 12"><path d="M1 6h13M9 1l5 5-5 5" stroke="#3f9e8c" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- TESTIMONIAL -->
+  <section style="background:#fff;padding:40px 24px 48px;font-family:'Poppins',sans-serif;">
+    <div style="position:relative;">
+      <div style="display:{{ baGridDisplay }};flex-direction:{{ baFlexDir }};grid-template-columns:{{ baGridCols }};gap:0;border-radius:20px;overflow:hidden;">
+        <div style="background:#eef0ee;padding:{{ baPadding }};display:flex;flex-direction:column;justify-content:center;">
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.4px;margin:0 0 12px;color:#182839;">{{ testimonial.title }}</h3>
+          <p style="font-size:15px;color:#3f4a58;margin:0 0 20px;">{{ testimonial.quote }}</p>
+          <div style="font-weight:700;font-size:15px;">{{ testimonial.name }}</div>
+        </div>
+        <div style="position:relative;min-height:{{ baImgMinH }};">
+          <sc-if value="{{ testimonial.beforeImg }}" hint-placeholder-val="false">
+            <img src="{{ testimonial.beforeImg }}" alt="Hovedbund før" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;position:absolute;inset:0;">
+          </sc-if>
+          <span style="position:absolute;bottom:16px;left:16px;background:#374151;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;">Før</span>
+        </div>
+        <div style="position:relative;min-height:{{ baImgMinH }};">
+          <sc-if value="{{ testimonial.afterImg }}" hint-placeholder-val="false">
+            <img src="{{ testimonial.afterImg }}" alt="Hovedbund efter" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;position:absolute;inset:0;">
+          </sc-if>
+          <span style="position:absolute;bottom:16px;left:16px;background:#1db888;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;">{{ testimonial.afterLabel }}</span>
+        </div>
+      </div>
+      <button onClick="{{ prevTestimonial }}" style="display:{{ baArrowDisplay }};position:absolute;top:50%;left:12px;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:#fff;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;">
+        <svg width="10" height="16" viewBox="0 0 10 16"><path d="M9 1L1 8l8 7" stroke="#1e293b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </button>
+      <button onClick="{{ nextTestimonial }}" style="display:{{ baArrowDisplay }};position:absolute;top:50%;right:12px;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:#fff;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;">
+        <svg width="10" height="16" viewBox="0 0 10 16"><path d="M1 1l8 7-8 7" stroke="#1e293b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </button>
+    </div>
+    <div style="display:flex;justify-content:center;gap:10px;margin-top:24px;">
+      <sc-for list="{{ testimonialDots }}" as="dot" hint-placeholder-count="2">
+        <button onClick="{{ dot.select }}" style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;padding:0;background:{{ dot.color }};"></button>
+      </sc-for>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- SAMMENLIGNING -->
+  <section style="background:#fff;padding:40px 24px 44px;font-family:'Poppins',sans-serif;">
+    <div style="max-width:900px;margin:0 auto;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:26px;line-height:1.15;letter-spacing:-0.7px;margin:0 0 12px;text-align:center;color:#182839;">Finasterid eller dutasterid tabletter – hvad er forskellen?</h2>
+      <p style="font-size:15px;line-height:1.5;color:#6e6e73;margin:0 0 28px;text-align:center;">Se hvordan de to tabletbehandlinger adskiller sig fra hinanden. En af vores læger hjælper dig med at vælge den rette.</p>
+      <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid #e5e5e3;overflow-x:auto;display:{{ compareTableDisplay }};">
+        <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:560px;table-layout:fixed;">
+          <thead>
+            <tr style="background:#eceeec;">
+              <th style="text-align:left;padding:18px 20px;font-weight:700;width:34%;">Egenskab</th>
+              <th style="text-align:left;padding:18px 20px;font-weight:700;width:33%;"><a href="Finasterid-tabletter.html" style="color:inherit;text-decoration:none;">Finasterid tabletter</a></th>
+              <th style="text-align:left;padding:18px 20px;font-weight:700;width:33%;"><a href="Dutasterid-tabletter.html" style="color:inherit;text-decoration:none;">Dutasterid tabletter</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top:1px solid #e5e5e3;">
+              <td style="padding:16px 20px;font-weight:600;color:#3f4a58;">Aktivt stof</td>
+              <td style="padding:16px 20px;">Finasterid 1 mg</td>
+              <td style="padding:16px 20px;">Dutasterid 0,5 mg</td>
+            </tr>
+            <tr style="border-top:1px solid #e5e5e3;">
+              <td style="padding:16px 20px;font-weight:600;color:#3f4a58;">Styrke</td>
+              <td style="padding:16px 20px;">God effekt</td>
+              <td style="padding:16px 20px;">Kraftigere effekt</td>
+            </tr>
+            <tr style="border-top:1px solid #e5e5e3;">
+              <td style="padding:16px 20px;font-weight:600;color:#3f4a58;">Bivirkninger i kroppen</td>
+              <td style="padding:16px 20px;">Lav risiko</td>
+              <td style="padding:16px 20px;">Let øget risiko ift. finasterid</td>
+            </tr>
+            <tr style="border-top:1px solid #e5e5e3;">
+              <td style="padding:16px 20px;font-weight:600;color:#3f4a58;">Anvendelse</td>
+              <td style="padding:16px 20px;">Én tablet dagligt</td>
+              <td style="padding:16px 20px;">Én tablet dagligt</td>
+            </tr>
+            <tr style="border-top:1px solid #e5e5e3;">
+              <td style="padding:16px 20px;font-weight:600;color:#3f4a58;">Godt valg hvis...</td>
+              <td style="padding:16px 20px;">Du ønsker den mest velafprøvede og veldokumenterede tabletbehandling</td>
+              <td style="padding:16px 20px;">Du ønsker den kraftigste hæmning af DHT i tabletform</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:{{ compareMobileDisplay }};overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:16px;padding:4px 4px 8px;margin:0 -4px;">
+        <sc-for list="{{ comparisonMobile }}" as="prod" hint-placeholder-count="2">
+          <div style="flex:0 0 68%;scroll-snap-align:center;background:#fff;border-radius:16px;border:1px solid #e5e5e3;overflow:hidden;">
+            <div style="display:flex;align-items:center;gap:14px;background:#eceeec;padding:14px 20px;">
+              <sc-if value="{{ prod.img }}" hint-placeholder-val="false">
+                <img src="{{ prod.img }}" alt="{{ prod.name }}" style="width:52px;height:52px;object-fit:contain;flex-shrink:0;">
+              </sc-if>
+              <div style="font-weight:700;font-size:17px;">{{ prod.name }}</div>
+            </div>
+            <sc-for list="{{ prod.rows }}" as="row" hint-placeholder-count="5">
+              <div style="padding:14px 20px;border-top:1px solid #e5e5e3;">
+                <div style="font-size:12px;color:#8b95a1;margin-bottom:3px;">{{ row.label }}</div>
+                <div style="font-size:15px;color:#1e293b;">{{ row.value }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- FAQ -->
+  <section style="background:#f7f6f4;padding:40px 0 48px;font-family:'Poppins',sans-serif;">
+    <div style="padding:0 24px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 28px;color:#182839;">Ofte stillede spørgsmål</h2>
+      <div style="display:flex;flex-direction:column;">
+        <sc-for list="{{ faqAccordion }}" as="item" hint-placeholder-count="5">
+          <div onClick="{{ item.toggle }}" style="border-bottom:1px solid #d2d2d7;padding:22px 0;cursor:pointer;">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              <span style="font-weight:600;font-size:16px;line-height:1.3;color:#182839;">{{ item.q }}</span>
+              {{ item.chevron }}
+            </div>
+            <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+              <p style="font-size:15px;line-height:1.5;color:#6e6e73;margin:12px 0 0;padding-right:32px;">{{ item.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:center;padding-top:36px;">
+        <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-weight:600;font-size:16px;padding:14px 30px;border-radius:999px;white-space:nowrap;">Start gratis vurdering</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- CTA -->
+  <section style="background:#fff;padding:8px 16px 40px;font-family:'Poppins',sans-serif;">
+    <div style="background:#e4ede9;border-radius:24px;padding:24px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;line-height:1.2;letter-spacing:-0.5px;margin:0;max-width:420px;color:#182839;">Er du i tvivl om hvad der passer til dig?</h2>
+      <div>
+        <p style="font-size:14px;line-height:1.5;color:#4b5563;margin:0 0 16px;max-width:400px;">Start din gratis vurdering i dag, og få svar fra en af vores læger på hvilken behandling der passer til dig.</p>
+        <a href="Kontakt.html" style="display:inline-flex;justify-content:center;align-items:center;width:100%;max-width:{{ cta2MaxWidth }};box-sizing:border-box;background:{{ cta2Bg }};border:{{ cta2Border }};transition:background 0.35s ease, border-color 0.35s ease, color 0.35s ease;font-weight:700;font-size:16px;padding:12px 12px 12px 24px;border-radius:999px;color:#fff;" onMouseEnter="{{ cta2Enter }}" onMouseLeave="{{ cta2Leave }}"><span style="display:inline-block;overflow:hidden;white-space:nowrap;max-width:{{ cta2TextMaxW }};opacity:{{ cta2TextOpacity }};margin-right:{{ cta2TextGap }};transition:max-width 0.4s ease, opacity 0.3s ease, margin-right 0.4s ease;">Start gratis vurdering</span><span style="width:28px;height:28px;border-radius:50%;background:{{ cta2ArrowBg }};display:flex;align-items:center;justify-content:center;transition:background 0.35s ease;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#182839" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- FOOTER -->
+  <footer style="background:#fff;padding:40px 64px 64px;display:grid;grid-template-columns:{{ footerGridCols }};gap:32px;">
+    <div>
+      <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;margin-bottom:16px;color:#182839;letter-spacing:-0.3px;">Trium Care ApS</div>
+      <p style="color:#3f4a58;font-size:15px;margin:0 0 8px;">CVR: 46609034</p>
+      <p style="color:#3f4a58;font-size:15px;margin:0 0 20px;">Se <a href="Cookiepolitik.html">Cookies-</a> &amp; <a href="Privatlivspolitik.html">Privatlivspolitik</a></p>
+      <div style="display:flex;gap:14px;">
+        <a href="#" aria-label="Facebook" style="width:38px;height:38px;border-radius:50%;background:#e5e1dd;display:flex;align-items:center;justify-content:center;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.5h-2c-2.2 0-4 1.8-4 4v2H9v3h2V19h3v-4.5h2.2l.8-3H14v-1.5c0-.55.45-1 1-1z" fill="#182839"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram" style="width:38px;height:38px;border-radius:50%;background:#e5e1dd;display:flex;align-items:center;justify-content:center;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#182839" stroke-width="1.8"></rect><circle cx="12" cy="12" r="4" stroke="#182839" stroke-width="1.8"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="#182839"></circle></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;margin-bottom:20px;color:#182839;letter-spacing:-0.2px;">Kontakt</div>
+      <div style="display:flex;flex-direction:column;gap:20px;font-size:15px;">
+        <div><div style="font-weight:700;margin-bottom:4px;">Book tid</div><a href="#" style="transition:color .2s ease;" style-hover="color:#3f9e8c;">Klik her</a></div>
+        <div><div style="font-weight:700;margin-bottom:4px;">Mail</div><a href="mailto:info@triumcare.dk" style="transition:color .2s ease;" style-hover="color:#3f9e8c;">Info@triumcare.dk</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="Kontakt.html" style="position:fixed;bottom:24px;right:24px;z-index:60;display:flex;align-items:center;background:#182839;color:#fff;border-radius:999px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,0.22);overflow:hidden;transition:padding .3s ease;" style-hover="padding:16px 22px 16px 16px;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><rect x="3" y="5" width="18" height="16" rx="3" stroke="#fff" stroke-width="1.8"></rect><line x1="3" y1="10" x2="21" y2="10" stroke="#fff" stroke-width="1.8"></line><line x1="8" y1="2.5" x2="8" y2="6.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></line><line x1="16" y1="2.5" x2="16" y2="6.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></line></svg>
+    <span style="max-width:0;opacity:0;white-space:nowrap;overflow:hidden;font-weight:700;font-size:15px;transition:max-width .3s ease, opacity .3s ease, margin-left .3s ease;margin-left:0;" style-hover="max-width:160px;opacity:1;margin-left:10px;">Book tid nu</span>
+  </a>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { openFaq: 0, testimonialIndex: 0, ready: true, showMega: false, hoveredCta: null, isMobile: true, mobileMenuOpen: false };
+  componentDidMount() {
+                const stepEls = document.querySelectorAll('[data-reveal]');
+    stepEls.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(28px)';
+      el.style.transition = `opacity 0.7s ease ${i * 0.12}s, transform 0.7s ease ${i * 0.12}s`;
+    });
+    const lineEl = document.querySelector('[data-reveal-line]');
+    if (lineEl) {
+      const stepIo = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            stepEls.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+            lineEl.style.transform = 'scaleX(1)';
+          } else {
+            stepEls.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(28px)'; });
+            lineEl.style.transform = 'scaleX(0)';
+          }
+        });
+      }, { threshold: 0.2 });
+      stepIo.observe(lineEl.closest('section'));
+    }
+  }
+
+  renderVals() {
+    const isMobile = this.state.isMobile;
+    const heroCtaWidth = isMobile ? 'auto' : '100%';
+    const heroCtaFontSize = isMobile ? '15px' : '16px';
+    const heroCtaPadding = isMobile ? '12px 12px 12px 22px' : '14px 14px 14px 26px';
+    const iconSvg = (path) => React.createElement('svg', { width: 44, height: 44, viewBox: '0 0 24 24', fill: 'none' }, React.createElement('path', { d: path, stroke: '#3f9e8c', strokeWidth: 1.3, strokeLinecap: 'round', strokeLinejoin: 'round' }));
+    const ctaGaps = [16, 14, 14];
+    const ctaVals = {};
+    for (let __i = 0; __i < ctaGaps.length; __i++) {
+      const __id = 'cta' + __i;
+      const __hov = this.state.hoveredCta === __id;
+      const __gap = ctaGaps[__i];
+      ctaVals[__id + 'Bg'] = __hov ? '#fff' : '#182839';
+      ctaVals[__id + 'Border'] = __hov ? '1.5px solid #182839' : '1.5px solid transparent';
+      ctaVals[__id + 'ArrowBg'] = __hov ? 'transparent' : '#fff';
+      ctaVals[__id + 'TextMaxW'] = __hov ? '0px' : '260px';
+      ctaVals[__id + 'TextOpacity'] = __hov ? 0 : 1;
+      ctaVals[__id + 'TextGap'] = __hov ? '0px' : __gap + 'px';
+      ctaVals[__id + 'Enter'] = (() => { const idc = __id; return () => this.setState({ hoveredCta: idc }); })();
+      ctaVals[__id + 'Leave'] = (() => { const idc = __id; return () => this.setState(s => s.hoveredCta === idc ? { hoveredCta: null } : null); })();
+    }
+
+    const testimonials = [
+      { title: 'Jeg er utrolig glad for mit resultat', quote: '"Jeg begyndte min behandling hos Trium Care for 6 måneder siden, og forskellen er virkelig mærkbar. Mit hår føles tykkere, og jeg har fået meget mere selvtillid tilbage."', name: 'Yakup, Trium Care kunde', beforeImg: 'assets/before-photo-real.jpg', afterImg: 'assets/after-photo-real.jpg', afterLabel: 'Efter 6 måneder' },
+      { title: 'Det har givet mig selvtilliden tilbage', quote: '"Jeg var skeptisk i starten, men efter 8 måneder kan jeg virkelig se forskel i hårtætheden. Processen har været nem og lægerne har været gode til at følge op."', name: 'Anders, Trium Care kunde', beforeImg: 'assets/before-photo-case2.jpg', afterImg: 'assets/after-photo-case2.jpg', afterLabel: 'Efter 1 måned' },
+    ];
+    const tIndex = this.state.testimonialIndex;
+    const testimonial = testimonials[tIndex];
+    const testimonialDots = testimonials.map((t, i) => ({
+      color: i === tIndex ? '#1e293b' : '#d5d7d3',
+      select: () => this.setState({ testimonialIndex: i }),
+    }));
+
+    const faqData = [
+      { q: 'Kan jeg tage finasterid og dutasterid samtidig?', a: 'Nej, det anbefales ikke at kombinere de to tabletbehandlinger, da de begge hæmmer DHT. En af vores læger hjælper dig med at vælge det rigtige produkt til dig.' },
+      { q: 'Hvor lang tid tager det at se resultater?', a: 'De fleste patienter begynder at se resultater efter 3-6 måneders sammenhængende behandling. Fuld effekt vurderes typisk efter 12 måneder.' },
+      { q: 'Er der forskel på bivirkninger?', a: 'Begge tabletter har en lav risiko for bivirkninger i kroppen. Dutasterid har en kraftigere effekt, hvilket for nogle kan give en let øget risiko sammenlignet med finasterid.' },
+      { q: 'Hvilket produkt anbefales til hvem?', a: 'Finasterid tabletter er vores mest populære tabletbehandling og et godt udgangspunkt for de fleste. Dutasterid tabletter er relevant hvis du ønsker en kraftigere effekt, eller hvis finasterid ikke har givet den ønskede virkning.' },
+      { q: 'Er behandlingen permanent?', a: 'Nej. Behandlingen skal fortsættes for at opretholde resultaterne – stopper du, genoptages hårtabet gradvist over 6-12 måneder.' },
+    ];
+    const faqAccordion = faqData.map((f, i) => ({
+      ...f,
+      open: this.state.openFaq === i,
+      showPlus: this.state.openFaq !== i,
+      chevron: React.createElement('svg', {
+        width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none',
+        style: { flexShrink: 0, transform: this.state.openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform .25s ease' }
+      }, React.createElement('path', { d: 'M6 9l6 6 6-6', stroke: '#182839', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' })),
+      borderStyle: (i < faqData.length - 1) ? 'border-bottom:1px solid #ececea;' : '',
+      toggle: () => this.setState({ openFaq: this.state.openFaq === i ? -1 : i }),
+    }));
+
+    const megaColumns = [
+      { title: 'Hårtab', border: 'none', padLeft: '0', href: 'Haartab-lineup.html',
+        products: [{ prefix: 'Finasterid ', bold: 'm. minoxidil hårserum', href: 'Finasterid-haarserum.html', popular: true, groupLabel: 'SERUM & GEL' }, { prefix: 'Dutasterid ', bold: 'hårgel', href: 'Dutasterid-haargel.html' }, { prefix: 'Finasterid ', bold: 'tabletter', href: 'Finasterid-tabletter.html', groupLabel: 'TABLETTER' }, { prefix: 'Dutasterid ', bold: 'tabletter', href: 'Dutasterid-tabletter.html' }] },
+      { title: 'Rejsningsbesvær', border: '1px solid #e5e7eb', padLeft: '40px', href: 'Rejsningsbesvaer-lineup.html',
+        products: [{ prefix: 'Viagra ', bold: '(Sildenafil)', href: 'Sildenafil.html', groupLabel: 'PRODUKTER' }, { prefix: 'Cialis ', bold: '(Tadalafil)', href: 'Tadalafil.html' }, { prefix: 'Spedra ', bold: '(Avanafil)', href: 'Rejsningsbesvaer-lineup.html' }] },
+    ];
+
+    const comparisonMobile = [
+      { name: 'Finasterid tabletter', img: 'assets/finasterid-tablet-box-crop.png', rows: [{ label: 'Aktivt stof', value: 'Finasterid 1 mg' }, { label: 'Styrke', value: 'God effekt' }, { label: 'Bivirkninger i kroppen', value: 'Lav risiko' }, { label: 'Anvendelse', value: 'Én tablet dagligt' }, { label: 'Godt valg hvis...', value: 'Du ønsker den mest velafprøvede og veldokumenterede tabletbehandling' }] },
+      { name: 'Dutasterid tabletter', img: 'assets/dutasterid-tabletter-box-v3-crop.png', rows: [{ label: 'Aktivt stof', value: 'Dutasterid 0,5 mg' }, { label: 'Styrke', value: 'Kraftigere effekt' }, { label: 'Bivirkninger i kroppen', value: 'Let øget risiko ift. finasterid' }, { label: 'Anvendelse', value: 'Én tablet dagligt' }, { label: 'Godt valg hvis...', value: 'Du ønsker den kraftigste hæmning af DHT i tabletform' }] },
+    ];
+
+    return {
+      comparisonMobile,
+      compareTableDisplay: this.state.isMobile ? 'none' : 'block',
+      compareMobileDisplay: this.state.isMobile ? 'flex' : 'none',
+      heroPadding: isMobile ? '20px 24px 12px' : '100px 64px',
+      heroMinHeight: this.state.isMobile ? '340px' : '660px',
+      heroMaxWidth: this.state.isMobile ? '100%' : '540px',
+      heroImgW: this.state.isMobile ? '85%' : '100%',
+      heroImgOpacity: this.state.isMobile ? '0.85' : '1',
+      heroBgOverlay: this.state.isMobile ? 'linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.8))' : 'transparent',
+      footerGridCols: this.state.isMobile ? '1fr' : '1.2fr 0.8fr 1fr 1fr 1fr',
+      footerGap: this.state.isMobile ? '40px' : '32px',
+      stepsGridCols: this.state.isMobile ? '1fr' : 'repeat(4,1fr)',
+      baGridDisplay: this.state.isMobile ? 'flex' : 'grid',
+      baFlexDir: this.state.isMobile ? 'column' : 'row',
+      baGridCols: this.state.isMobile ? '1fr' : '1.3fr 0.85fr 0.85fr',
+      baPadding: this.state.isMobile ? '28px 24px' : '48px',
+      baArrowDisplay: this.state.isMobile ? 'none' : 'flex',
+      stepsGapV: this.state.isMobile ? '12px' : '36px',
+      stepsGapH: this.state.isMobile ? '0px' : '24px',
+      stepNumSize: this.state.isMobile ? '18px' : '38px',
+      stepNumMB: this.state.isMobile ? '12px' : '20px',
+      stepIconSize: this.state.isMobile ? '72px' : '84px',
+      stepNumDisplay: this.state.isMobile ? 'none' : 'block',
+      stepIconOuterBg: this.state.isMobile ? 'transparent' : 'radial-gradient(circle,rgba(63,158,140,0.2),rgba(63,158,140,0) 72%)',
+      stepIconBorder: this.state.isMobile ? '2px solid #3f9e8c' : '1.5px solid #3f9e8c',
+      stepIconShadow: this.state.isMobile ? 'none' : '0 8px 24px rgba(30,41,59,0.06)',
+      stepTagDisplay: this.state.isMobile ? 'none' : 'inline-block',
+      stepIconMB: this.state.isMobile ? '10px' : '60px',
+      stepTitleSize: this.state.isMobile ? '15px' : '21px',
+      stepDescSize: this.state.isMobile ? '12px' : '15px',
+      stepDescMaxW: this.state.isMobile ? '260px' : '230px',
+      stepDescMinH: this.state.isMobile ? '0' : '48px',
+      stepTagMinW: this.state.isMobile ? '0' : '130px',
+      baImgMinH: this.state.isMobile ? '200px' : '440px',
+      navDesktopDisplay: 'flex',
+      twoColGrid: this.state.isMobile ? '1fr' : '1fr 1fr',
+      twoCardDir: this.state.isMobile ? 'column' : 'row',
+      twoCardImgW: this.state.isMobile ? '100%' : '46%',
+      twoCardImgH: this.state.isMobile ? '220px' : 'auto',
+      twoColDisplay: this.state.isMobile ? 'flex' : 'grid',
+      twoColOverflowX: this.state.isMobile ? 'auto' : 'visible',
+      twoColSnap: this.state.isMobile ? 'x mandatory' : 'none',
+      twoColGap: this.state.isMobile ? '10px' : '24px',
+      twoColPad: this.state.isMobile ? '0 4px 8px' : '0',
+      twoColCardFlex: this.state.isMobile ? '0 0 88%' : '1',
+      twoColSnapAlign: this.state.isMobile ? 'center' : 'none',
+      navCtaDisplay: 'flex',
+      hamburgerDisplay: 'none',
+      mobileMenuOpen: this.state.mobileMenuOpen,
+      toggleMobileMenu: () => this.setState(s => ({ mobileMenuOpen: !s.mobileMenuOpen })),
+      heroCtaWidth,
+      heroCtaFontSize,
+      heroCtaPadding,
+      ...ctaVals,
+      megaColumns,
+      showMega: this.state.showMega,
+      showMegaOn: () => this.setState({ showMega: true }),
+      showMegaOff: () => this.setState({ showMega: false }),
+      goToBehandlinger: () => { window.location.href = 'Forside.html#behandlinger'; },
+      goToPriser: (e) => { e.preventDefault(); window.location.href = 'Forside.html#priser'; },
+      megaBg: this.state.showMega ? '#fff' : 'transparent',
+      megaColor: '#182839',
+      heroChecks: [
+        { label: 'Dokumenteret effekt' },
+        { label: 'Receptpligtig medicin' },
+        { label: 'Lægelig vurdering online' },
+        { label: 'Diskret levering' },
+      ],
+      faqAccordion,
+      testimonial, testimonialDots,
+      prevTestimonial: () => this.setState({ testimonialIndex: (tIndex - 1 + testimonials.length) % testimonials.length }),
+      nextTestimonial: () => this.setState({ testimonialIndex: (tIndex + 1) % testimonials.length }),
+      steps: [
+        { n: 1, title: 'Book online', desc: 'Besvar få spørgsmål om dine symptomer.', tag: '2 minutter', icon: iconSvg('M4 5h16M4 5v16h16V5M4 5H2m18 0h2M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2') },
+        { n: 2, title: 'Tal med en læge', desc: 'Din behandling vurderes af en dansk autoriseret læge.', tag: 'STPS-registreret', icon: iconSvg('M3 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7zM15 10.5l5-3v9l-5-3') },
+        { n: 3, title: 'Få recept', desc: 'Recepten sendes til dit lokale apotek.', tag: 'Digital recept', icon: iconSvg('M7.05 16.95a5 5 0 010-7.07l3.54-3.54a5 5 0 017.07 7.07l-3.54 3.54a5 5 0 01-7.07 0zM9.17 8.34l6.49 6.49') },
+        { n: 4, title: 'Opfølgning', desc: 'Vi følger løbende op og justerer efter behov.', tag: 'Ingen binding', icon: iconSvg('M4 4v5h5M20 20v-5h-5M4.6 15a8 8 0 0014.4 3M19.4 9a8 8 0 00-14.4-3') },
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

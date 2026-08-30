@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>/* device-redirect */
+(function(){
+  try {
+    var TO_MOBILE = {"index.html":"Forside-mobil.html","Forside.html":"Forside-mobil.html","Haartab.html":"Haartab-lineup-mobil.html","Rejsningsbesvaer.html":"Rejsningsbesvaer-lineup-mobil.html","Cookiepolitik.html":"Cookiepolitik-mobil.html","Dutasterid-haargel.html":"Dutasterid-haargel-mobil.html","Dutasterid-tabletter.html":"Dutasterid-tabletter-mobil.html","Finasterid-haarserum.html":"Finasterid-haarserum-mobil.html","Finasterid-tabletter.html":"Finasterid-tabletter-mobil.html","Handelsbetingelser.html":"Handelsbetingelser-mobil.html","Kontakt.html":"Kontakt-mobil.html","Om-os.html":"Om-os-mobil.html","Privatlivspolitik.html":"Privatlivspolitik-mobil.html","Sildenafil.html":"Sildenafil-mobil.html","Tabletter-finasterid-eller-dutasterid.html":"Tabletter-finasterid-eller-dutasterid-mobil.html","Tadalafil.html":"Tadalafil-mobil.html"};
+    var TO_DESKTOP = {"Forside-mobil.html":"Forside.html","Haartab-lineup-mobil.html":"Haartab.html","Rejsningsbesvaer-lineup-mobil.html":"Rejsningsbesvaer.html","Cookiepolitik-mobil.html":"Cookiepolitik.html","Dutasterid-haargel-mobil.html":"Dutasterid-haargel.html","Dutasterid-tabletter-mobil.html":"Dutasterid-tabletter.html","Finasterid-haarserum-mobil.html":"Finasterid-haarserum.html","Finasterid-tabletter-mobil.html":"Finasterid-tabletter.html","Handelsbetingelser-mobil.html":"Handelsbetingelser.html","Kontakt-mobil.html":"Kontakt.html","Om-os-mobil.html":"Om-os.html","Privatlivspolitik-mobil.html":"Privatlivspolitik.html","Sildenafil-mobil.html":"Sildenafil.html","Tabletter-finasterid-eller-dutasterid-mobil.html":"Tabletter-finasterid-eller-dutasterid.html","Tadalafil-mobil.html":"Tadalafil.html","Avanafil-mobil.html":"Sildenafil.html","Testosteron-lineup-mobil.html":"Forside.html"};
+    var isMobile = window.innerWidth <= 860;
+    var file = (window.location.pathname.split('/').pop() || 'index.html');
+    var target = isMobile ? TO_MOBILE[file] : TO_DESKTOP[file];
+    if (target && target !== file) {
+      window.location.replace(target + window.location.search + window.location.hash);
+    }
+  } catch(e) {}
+})();
+</script>
+
+
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#e7e3df">
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#e7e3df"/><text x="600" y="420" font-family="serif" font-size="120" fill="#182839" text-anchor="middle">III</text></svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Mrs+Saint+Delafield&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #fff; font-family: 'Poppins', sans-serif; }
+  a { color: #1e293b; text-decoration: none; }
+  a:hover { color: #3f9e8c; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden !important; margin: 0; }
+  @media (min-width: 861px) {
+    section > div, footer, article { max-width: 1100px; margin-left: auto !important; margin-right: auto !important; }
+    section, footer, article { padding-left: 48px !important; padding-right: 48px !important; }
+  }
+
+  @media (max-width: 860px) {
+    body section:not([id]) { padding-top: 32px !important; padding-bottom: 32px !important; }
+    [data-reveal="1"] [data-step-title]::before { content: "1. "; }
+    [data-reveal="2"] [data-step-title]::before { content: "2. "; }
+    [data-reveal="3"] [data-step-title]::before { content: "3. "; }
+    [data-reveal="4"] [data-step-title]::before { content: "4. "; }
+    nav > div:first-child { padding: 6px 16px !important; min-height: 44px !important; }
+    footer[style*="grid-template-columns:1.2fr"] { grid-template-columns: 1fr !important; gap: 40px !important; text-align: left; }
+    nav img { height: 30px !important; margin: 0 !important; }
+    section, footer, article { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: 32px !important; line-height: 1.2 !important; }
+    h2 { font-size: 26px !important; }
+    img { max-width: 100%; }
+    section, footer, article { padding-top: 40px !important; padding-bottom: 40px !important; }
+    table { max-width: 100%; }
+    div[style*="grid-template-columns:repeat(2"],
+    div[style*="grid-template-columns:repeat(3"],
+    div[style*="grid-template-columns:repeat(4"],
+    div[style*="grid-template-columns:1fr 1fr 1fr"],
+    div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+    [data-reveal-line] { display: none !important; }
+    div[style*="min-width:700px"] { min-width: 0 !important; width: 92vw !important; left: 50% !important; transform: translateX(-50%) !important; grid-template-columns: 1fr !important; padding: 28px !important; gap: 28px !important; }
+    div[style*="grid-template-columns:1.3fr"] { grid-template-columns: 1fr !important; }
+  }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="font-family:'Poppins',sans-serif;color:#1e293b;">
+
+  <!-- NAV -->
+  <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
+      <a href="Forside.html" style="display:flex;align-items:center;"><img src="assets/trium-mark.png" alt="Trium Care" style="height:22px;width:22px;object-fit:contain;margin:0 12px 0 0;"></a>
+      <div style="display:flex;align-items:center;justify-content:center;gap:0;flex:1;">
+        <a href="Forside.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
+        <a href="Forside.html#haartab" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Behandlinger</a>
+        <a href="Forside.html#saadan-fung" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Processen</a>
+        <a href="Forside.html#priser" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Priser</a>
+        <a href="Om-os.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Om os</a>
+      </div>
+      <button onClick="{{ toggleMobileMenu }}" style="display:none;background:none;border:none;cursor:pointer;padding:8px;align-items:center;justify-content:center;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
+      </button>
+    </div>
+    <sc-if value="{{ mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position:fixed;inset:0;background:#fff;z-index:200;overflow-y:auto;display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:center;justify-content:flex-end;padding:14px 20px;">
+          <button onClick="{{ closeMobileMenu }}" style="background:none;border:none;cursor:pointer;padding:8px;display:flex;align-items:center;justify-content:center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
+          </button>
+        </div>
+        <div style="display:flex;flex-direction:column;padding:8px 32px 40px;">
+        <a href="Forside.html" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Hjem</a>
+        <a href="Forside.html#behandlinger" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Behandlinger</a>
+        <a href="Forside.html#saadan-fung" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Processen</a>
+        <a href="Forside.html#priser" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Priser</a>
+        <a href="Om-os.html" onClick="{{ closeMobileMenu }}" style="color:#182839;font-weight:600;font-size:17px;padding:14px 0;border-bottom:1px solid #ececea;">Om os</a>
+        </div>
+      </div>
+    </sc-if>
+  </nav>
+
+  <!-- HERO (mobil) -->
+  <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ true }}">
+    <section style="position:relative;background:#f2eeea;padding:44px 0 0;text-align:center;overflow:hidden;min-height:640px;">
+      <img src="assets/hero-produkter-fuld.png" alt="Finasterid, hårserum, Viagra og Testogel" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;z-index:0;">
+      <div style="position:absolute;top:4%;left:0;right:0;z-index:1;padding:0 24px;">
+        <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:10px;letter-spacing:2px;color:#3f4a58;margin-bottom:10px;">ONLINE LÆGEKLINIK FOR MÆND</div>
+        <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Sundhed for mænd.<br>Helt enkelt.</h1>
+        <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 18px;">Online behandling af hårtab,<br>rejsningsbesvær og testosteronmangel.</p>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:0;">
+          <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;padding:11px 26px;border-radius:999px;white-space:nowrap;">Start gratis vurdering</a>
+          <div style="display:flex;align-items:center;gap:7px;font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;color:#3f4a58;">
+            <svg width="22" height="16" viewBox="0 0 22 16" style="border-radius:2px;display:block;flex-shrink:0;"><rect width="22" height="16" fill="#c8102e"></rect><rect x="6.4" width="3" height="16" fill="#fff"></rect><rect y="6.5" width="22" height="3" fill="#fff"></rect></svg>
+            <span>Autoriserede danske læger</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ false }}">
+  <section style="position:relative;padding:{{ heroPadding }};min-height:{{ heroMinHeight }};display:flex;align-items:center;overflow:hidden;background:{{ heroSectionBg }};">
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <img src="assets/hero-produkter-gruppe.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;">
+    </sc-if>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <img src="assets/all-products-v4.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroBgPos }};z-index:0;">
+    </sc-if>
+    <div style="position:absolute;inset:0;background:{{ heroBgOverlay }};z-index:1;"></div>
+    <div style="position:relative;z-index:2;max-width:{{ heroMaxWidth2 }};padding-bottom:0;">
+      <a href="Om-os.html" style="display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:999px;padding:12px 24px;font-weight:600;font-size:16px;margin-bottom:{{ heroBadgeMB }};color:#111827;">
+        <svg width="20" height="15" viewBox="0 0 28 20" style="flex-shrink:0;border-radius:2px;">
+          <rect width="28" height="20" fill="#c8102e"></rect>
+          <rect x="9" width="4" height="20" fill="#fff"></rect>
+          <rect y="8" width="28" height="4" fill="#fff"></rect>
+        </svg>
+        Autoriserede danske læger
+      </a>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:{{ heroTitleSize }};line-height:1.08;margin:0 0 {{ heroH1MB }};color:#111827;">
+        Sundhed<br>Selvtillid<br><span style="position:relative;display:inline-block;">
+          <span style="font-family:'Mrs Saint Delafield',cursive;font-weight:400;font-size:{{ heroScriptSize }};color:#1e293b;line-height:1;padding-bottom:16px;display:inline-block;white-space:nowrap;">hver dag</span>
+          <svg width="{{ heroUnderlineWidth }}" height="{{ heroUnderlineHeight }}" viewBox="0 0 140 24" style="position:absolute;left:2px;bottom:{{ heroUnderlineBottom }};" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="underlineFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1e293b" stop-opacity="1"></stop>
+                <stop offset="75%" stop-color="#1e293b" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#1e293b" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+            <path d="M2 18 Q 70 6 138 8" stroke="url(#underlineFade)" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+          </svg>
+        </span>
+      </h1>
+      <p style="font-size:{{ heroDescSize }};color:#3f4a58;margin:0 0 20px;">Evidensbaseret behandling af<br>hårtab og rejsningsbesvær.</p>
+      <ul style="list-style:none;margin:0 0 {{ heroUlMB }};padding:0;display:flex;flex-direction:column;gap:{{ heroUlGap }};font-size:{{ heroFeatureSize }};font-weight:700;color:#1f2937;">
+        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Online vurdering</li>
+        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Diskret behandling</li>
+        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Recept sendt til dit lokale apotek</li>
+      </ul>
+      <a href="Kontakt.html" style="display:flex;justify-content:center;align-items:center;width:{{ cta1Width }};max-width:320px;margin:0 auto;background:#182839;border:1px solid #182839;font-weight:700;font-size:{{ cta1FontSize }};padding:14px 20px;border-radius:999px;color:#fff;box-sizing:border-box;"><span style="display:inline-block;white-space:nowrap;margin-right:10px;">Start gratis vurdering</span><span style="width:36px;height:36px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#182839" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+      </a>
+    </div>
+  </section>
+  </sc-if>
+
+
+
+
+  <div style="height:12px;background:#fff;"></div>
+  <section id="haartab" style="padding:0;position:relative;width:100%;min-height:760px;background-image:url('assets/haartab-hero-produkter-v3.jpg');background-size:auto 78%;background-position:center;background-repeat:no-repeat;background-color:#e9e1df;overflow:hidden;">
+    <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Hårtab</h2>
+      <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Tabletter, hårserum og hårgel mod<br>arveligt hårtab — vurderet af en læge.</p>
+      <div style="display:flex;justify-content:center;gap:12px;">
+        <a href="Haartab-lineup.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;">Se behandlinger</a>
+        <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#182839;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;border:1px solid #182839;">Kom i gang</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <section id="rejsningsbesvaer" style="padding:0;position:relative;width:100%;min-height:760px;background-color:#f1f4ee;background-image:url('assets/ed-hero-boxes-v3.png');background-size:auto 78%;background-position:center;background-repeat:no-repeat;overflow:hidden;">
+    <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Rejsningsbesvær</h2>
+      <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Viagra og Cialis — receptpligtig<br>behandling vurderet af en dansk læge.</p>
+      <div style="display:flex;justify-content:center;gap:12px;">
+        <a href="Rejsningsbesvaer-lineup.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;">Se behandlinger</a>
+        <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#182839;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;border:1px solid #182839;">Kom i gang</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:12px;background:#fff;"></div>
+  <section id="behandlinger" style="padding:0;position:relative;width:100%;min-height:760px;background-image:url('assets/testogel-hero-new3.png');background-size:auto 78%;background-position:center;background-repeat:no-repeat;background-color:#e4ecf5;overflow:hidden;">
+    <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Testosteronmangel</h2>
+      <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Træthed, lavere libido og dårligere<br>restitution kan skyldes lavt testosteron.</p>
+      <div style="display:flex;justify-content:center;gap:12px;">
+        <a href="Testosteron-lineup.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;">Se behandling</a>
+        <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#182839;font-weight:600;font-size:12px;padding:7px 14px;border-radius:999px;border:1px solid #182839;">Kom i gang</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- SÅDAN FUNGERER DET -->
+  <section id="saadan-fung" style="background:#f5f5f7;padding:{{ saadanFungPT }} 0 {{ saadanFungPB }};">
+    <div style="padding:0 20px;">
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ h2Size }};margin:0 0 10px;color:#182839;letter-spacing:-0.3px;">Kom i gang nemt og bekvemt<span style="color:#182839;">.</span></h2>
+      <p style="font-size:14px;color:#4b5563;margin:0 0 28px;">Fire enkle trin. 100 % online.</p>
+    </div>
+    <div ref="{{ stepsRailRef }}" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:8px 20px 16px;">
+      <sc-for list="{{ steps }}" as="item" hint-placeholder-count="4">
+        <a href="{{ item.href }}" style="background:#fff;border-radius:28px;padding:28px 26px 30px;display:flex;flex-direction:column;text-align:left;color:inherit;">
+          <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#9a9a9a;margin-bottom:16px;">0{{ item.n }}</div>
+          <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;line-height:1.15;letter-spacing:-0.4px;color:#182839;margin-bottom:12px;" data-step-title="">{{ item.title }}</div>
+          <p style="font-size:15px;line-height:1.5;color:#4b5563;margin:0 0 6px;">{{ item.desc }}</p>
+          <div style="font-size:13px;font-weight:700;color:#0a66c2;">{{ item.tag }}</div>
+          <div style="display:flex;align-items:center;justify-content:center;padding-top:20px;color:#182839;">
+            {{ item.icon }}
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+
+  <div style="height:12px;background:#fff;"></div>
+  <!-- PRISER -->
+  <section id="priser" style="background:#e9edee;padding:{{ priserPT }} 24px {{ priserPB }} 24px;text-align:center;">
+    <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ priserH2Size }};margin:0 0 {{ priserH2MB }};color:#182839;letter-spacing:-0.3px;">Vælg din plan</h2>
+    <div style="display:inline-flex;background:#182839;border-radius:999px;padding:6px;margin-bottom:48px;">
+      <button onClick="{{ setMonthly }}" style="border:none;cursor:pointer;padding:9px 22px;border-radius:999px;font-weight:600;font-size:14px;font-family:'Poppins',sans-serif;background:{{ monthlyBg }};color:{{ monthlyColor }};">Månedlig</button>
+      <button onClick="{{ setYearly }}" style="border:none;cursor:pointer;padding:9px 22px;border-radius:999px;font-weight:600;font-size:14px;font-family:'Poppins',sans-serif;background:{{ yearlyBg }};color:{{ yearlyColor }};">Årlig</button>
+    </div>
+    <div style="display:{{ priserDisplay }};grid-template-columns:{{ priserGridCols }};gap:24px;max-width:1200px;margin:0 auto;text-align:left;overflow-x:{{ priserOverflowX }};scroll-snap-type:{{ priserSnap }};padding:{{ priserPad }};-webkit-overflow-scrolling:touch;">
+      <sc-for list="{{ plans }}" as="plan" hint-placeholder-count="4">
+        <div style="background:{{ plan.cardBg }};border:{{ plan.border }};border-radius:20px;padding:{{ planPadding }};min-width:0;display:flex;flex-direction:column;position:relative;transform:{{ plan.scale }};box-shadow:{{ plan.shadow }};transition:transform .2s ease,box-shadow .2s ease;flex:{{ priserCardFlex }};scroll-snap-align:{{ priserSnapAlign }};" style-hover="transform:{{ plan.scale }} translateY(-8px);box-shadow:0 20px 44px rgba(30,41,59,0.18);">
+          <sc-if value="{{ plan.popular }}" hint-placeholder-val="{{ false }}">
+            <span style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#3f9e8c;color:#fff;font-size:13px;font-weight:700;padding:6px 18px;border-radius:999px;white-space:nowrap;">✓ Mest populære</span>
+          </sc-if>
+          <sc-if value="{{ plan.badge }}" hint-placeholder-val="{{ false }}">
+            <span style="display:inline-block;background:{{ plan.badgeBg }};color:{{ plan.badgeColor }};font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px;margin-bottom:20px;width:fit-content;">{{ plan.badge }}</span>
+          </sc-if>
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ planTitleSize }};margin:0 0 {{ planTitleMB }};color:{{ plan.textColor }};overflow-wrap:break-word;white-space:pre-line;">{{ plan.title }}</h3>
+          <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:{{ planPriceMB }};">
+            <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ planPriceSize }};color:{{ plan.textColor }};">{{ plan.price }}</span>
+            <span style="color:{{ plan.unitColor }};font-size:15px;">{{ plan.unit }}</span>
+          </div>
+          <ul style="list-style:none;margin:0 0 {{ planFeatureListMB }};padding:0;display:flex;flex-direction:column;gap:{{ planFeatureGap }};flex:1;">
+            <sc-for list="{{ plan.features }}" as="f" hint-placeholder-count="4">
+              <li style="display:flex;align-items:center;gap:12px;font-size:{{ planFeatureSize }};color:{{ plan.textColor }};">
+                <span style="width:22px;height:22px;border-radius:50%;background:{{ plan.checkBg }};display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="11" height="9" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="{{ plan.checkColor }}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                {{ f }}
+              </li>
+            </sc-for>
+          </ul>
+          <a href="Kontakt.html" style="align-self:center;display:inline-flex;align-items:center;justify-content:center;background:{{ plan.ctaBg }};color:{{ plan.ctaColor }};font-weight:600;font-size:15px;padding:12px 28px;border-radius:999px;white-space:nowrap;">Bliv medlem</a>
+          <p style="font-size:12px;color:{{ plan.noteColor }};text-align:center;margin:{{ planNoteMT }} 0 0;">Medicin betales separat på apotek</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- TILLID -->
+
+
+
+  <!-- FOOTER -->
+  <footer style="background:#fff;padding:40px 64px 64px;display:grid;grid-template-columns:{{ footerGridCols }};gap:32px;">
+    <div>
+      <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;margin-bottom:16px;color:#182839;letter-spacing:-0.3px;">Trium Care ApS</div>
+      <p style="color:#3f4a58;font-size:15px;margin:0 0 8px;">CVR: 46609034</p>
+      <p style="color:#3f4a58;font-size:15px;margin:0 0 20px;">Se <a href="Cookiepolitik.html">Cookies-</a> &amp; <a href="Privatlivspolitik.html">Privatlivspolitik</a></p>
+      <div style="display:flex;gap:14px;">
+        <a href="#" aria-label="Facebook" style="width:38px;height:38px;border-radius:50%;background:#e5e1dd;display:flex;align-items:center;justify-content:center;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.5h-2c-2.2 0-4 1.8-4 4v2H9v3h2V19h3v-4.5h2.2l.8-3H14v-1.5c0-.55.45-1 1-1z" fill="#182839"></path></svg>
+        </a>
+        <a href="#" aria-label="Instagram" style="width:38px;height:38px;border-radius:50%;background:#e5e1dd;display:flex;align-items:center;justify-content:center;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#182839" stroke-width="1.8"></rect><circle cx="12" cy="12" r="4" stroke="#182839" stroke-width="1.8"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="#182839"></circle></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;margin-bottom:20px;color:#182839;letter-spacing:-0.2px;">Kontakt</div>
+      <div style="display:flex;flex-direction:column;gap:20px;font-size:15px;">
+        <div><div style="font-weight:700;margin-bottom:4px;">Book tid</div><a href="#" style="transition:color .2s ease;" style-hover="color:#3f9e8c;">Klik her</a></div>
+        <div><div style="font-weight:700;margin-bottom:4px;">Mail</div><a href="mailto:info@triumcare.dk" style="transition:color .2s ease;" style-hover="color:#3f9e8c;">Info@triumcare.dk</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="Kontakt.html" style="position:fixed;bottom:24px;right:24px;z-index:60;display:flex;align-items:center;background:#182839;color:#fff;border-radius:999px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,0.22);overflow:hidden;transition:padding .3s ease;" style-hover="padding:16px 22px 16px 16px;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><rect x="3" y="5" width="18" height="16" rx="3" stroke="#fff" stroke-width="1.8"></rect><line x1="3" y1="10" x2="21" y2="10" stroke="#fff" stroke-width="1.8"></line><line x1="8" y1="2.5" x2="8" y2="6.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></line><line x1="16" y1="2.5" x2="16" y2="6.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"></line></svg>
+    <span style="max-width:0;opacity:0;white-space:nowrap;overflow:hidden;font-weight:700;font-size:15px;transition:max-width .3s ease, opacity .3s ease, margin-left .3s ease;margin-left:0;" style-hover="max-width:220px;opacity:1;margin-left:10px;">Start gratis vurdering</span>
+  </a>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { billing: 'monthly', showMega: false , hoveredCta: null, isMobile: true, mobileMenuOpen: false };
+  stepsRail = React.createRef();
+
+  componentDidMount() {
+        if (window.location.hash) {
+      const targetId = window.location.hash.slice(1);
+      setTimeout(() => {
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.style.opacity = '1';
+          target.style.transform = 'translateY(0)';
+          target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
+      }, 50);
+    }
+    const stepEls = document.querySelectorAll('[data-reveal]');
+    stepEls.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(28px)';
+      el.style.transition = `opacity 0.7s ease ${i * 0.12}s, transform 0.7s ease ${i * 0.12}s`;
+    });
+    const stepSection = stepEls[0] ? stepEls[0].closest('section') : null;
+    if (stepSection) {
+      const stepIo = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            stepEls.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+          }
+        });
+      }, { threshold: 0.1 });
+      stepIo.observe(stepSection);
+    } else {
+      stepEls.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+    }
+  }
+
+  renderVals() {
+    const isMobile = this.state.isMobile;
+    const ctaGaps = [16,18,16];
+    const ctaVals = {};
+    for (let __i = 0; __i < ctaGaps.length; __i++) {
+      const __id = 'cta' + __i;
+      const __hov = this.state.hoveredCta === __id;
+      const __gap = ctaGaps[__i];
+      ctaVals[__id + 'Bg'] = __hov ? '#fff' : '#182839';
+      ctaVals[__id + 'Border'] = __hov ? '1.5px solid #182839' : '1.5px solid transparent';
+      ctaVals[__id + 'ArrowBg'] = __hov ? 'transparent' : '#fff';
+      ctaVals[__id + 'TextMaxW'] = __hov ? '0px' : '260px';
+      ctaVals[__id + 'TextOpacity'] = __hov ? 0 : 1;
+      ctaVals[__id + 'TextGap'] = __hov ? '0px' : __gap + 'px';
+      ctaVals[__id + 'Enter'] = (() => { const idc = __id; return () => this.setState({ hoveredCta: idc }); })();
+      ctaVals[__id + 'Leave'] = (() => { const idc = __id; return () => this.setState(s => s.hoveredCta === idc ? { hoveredCta: null } : null); })();
+    }
+
+    const isMonthly = this.state.billing === 'monthly';
+    const megaColumns = [
+      { title: 'Hårtab', icon: '💧', border: 'none', padLeft: '0', href: 'Haartab-lineup.html',
+        products: [{ prefix: 'Finasterid ', bold: 'm. minoxidil hårserum', href: 'Finasterid-haarserum.html', popular: true, groupLabel: 'SERUM & GEL' }, { prefix: 'Dutasterid ', bold: 'hårgel', href: 'Dutasterid-haargel.html' }, { prefix: 'Finasterid ', bold: 'tabletter', href: 'Finasterid-tabletter.html', groupLabel: 'TABLETTER' }, { prefix: 'Dutasterid ', bold: 'tabletter', href: 'Dutasterid-tabletter.html' }],
+        viden: [{ label: 'Hvad er arveligt hårtab?', href: 'Hvad-er-haartab.html' }, { label: 'Realistiske forventninger', href: 'Realistiske-forventninger.html' }, { label: 'Sådan virker finasterid', href: 'Saadan-virker-finasterid.html' }, { label: 'Tabletter vs. hårserum', href: 'Tabletter-vs-serum.html' }, { label: 'Videnskaben bag behandlingen', href: 'Videnskabelig-baggrund.html' }] },
+      { title: 'Rejsningsbesvær', icon: '💊', border: '1px solid #e5e7eb', padLeft: '40px', href: 'Rejsningsbesvaer-lineup.html',
+        products: [{ prefix: 'Viagra ', bold: '(Sildenafil)', href: 'Sildenafil.html', groupLabel: 'PRODUKTER' }, { prefix: 'Cialis ', bold: '(Tadalafil)', href: 'Tadalafil.html' }, { prefix: 'Spedra ', bold: '(Avanafil)', href: 'Vardenafil.html' }],
+        viden: [{ label: 'Hvad er rejsningsbesvær?', href: 'Hvad-er-rejsningsbesvaer.html' }, { label: 'Er erektionsproblemer tegn på sygdom?', href: 'Er-erektionsproblemer-tegn-paa-sygdom.html' }, { label: 'Sådan virker tadalafil og sildenafil', href: 'Saadan-virker-tadalafil.html' }, { label: 'Sildenafil vs. tadalafil', href: 'Sildenafil-vs-tadalafil.html' }] },
+    ];
+    const behandlinger = [
+      { title: 'Hårtab', desc: 'Dokumenterede behandlinger mod hårtab til mænd.', href: 'Haartab-lineup.html', hasImg: true, img: 'assets/haarserum-bottle-v3.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '0%', imgScale: 0.7, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
+      { title: 'Rejsningsbesvær', desc: 'Effektiv medicin, der hjælper dig videre.', href: 'Rejsningsbesvaer-lineup.html', hasImg: true, img: 'assets/sildenafil-box-v2.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '2%', imgScale: 1, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
+    ];
+    const iconSvg = (path) => React.createElement('svg', { width: 56, height: 56, viewBox: '0 0 24 24', fill: 'none' }, React.createElement('path', { d: path, stroke: '#0a66c2', strokeWidth: 1.25, strokeLinecap: 'round', strokeLinejoin: 'round' }));
+    const steps = [
+      { n: 1, title: 'Book online', desc: 'Besvar få spørgsmål om dine symptomer.', tag: '2 minutter', href: 'Kontakt.html', showBack: false, icon: iconSvg('M4 5h16M4 5v16h16V5M4 5H2m18 0h2M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2'), hasLine: false },
+      { n: 2, title: 'Tal med en læge', desc: 'Din behandling vurderes af en dansk autoriseret læge.', tag: 'STPS-registreret', href: '#saadan-fung', showBack: true, icon: iconSvg('M3 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7zM15 10.5l5-3v9l-5-3'), hasLine: true },
+      { n: 3, title: 'Få recept', desc: 'Recepten sendes til dit lokale apotek.', tag: 'Digital recept', href: '#saadan-fung', showBack: true, icon: iconSvg('M7.05 16.95a5 5 0 010-7.07l3.54-3.54a5 5 0 017.07 7.07l-3.54 3.54a5 5 0 01-7.07 0zM9.17 8.34l6.49 6.49'), hasLine: true },
+      { n: 4, title: 'Opfølgning', desc: 'Vi følger løbende op og justerer efter behov.', tag: 'Ingen binding', href: '#saadan-fung', showBack: true, icon: iconSvg('M4 4v5h5M20 20v-5h-5M4.6 15a8 8 0 0014.4 3M19.4 9a8 8 0 00-14.4-3'), hasLine: true },
+    ];
+    const stylePlan = (p) => p.popular ? {
+      ...p, cardBg: '#182839', border: 'none', scale: 'scale(1)', shadow: 'none',
+      badgeBg: '#3f9e8c', badgeColor: '#fff', textColor: '#fff', unitColor: '#c3ccd6',
+      checkBg: 'rgba(255,255,255,0.16)', checkColor: '#fff', ctaBg: '#fff', ctaColor: '#182839', noteColor: '#c3ccd6',
+    } : {
+      ...p, cardBg: '#fff', border: '1px solid #e5e5e3', scale: 'scale(1)', shadow: 'none',
+      badgeBg: '#182839', badgeColor: '#fff', textColor: '#1e293b', unitColor: '#6b7280',
+      checkBg: '#eceae7', checkColor: '#182839', ctaBg: '#182839', ctaColor: '#fff', noteColor: '#9ca3af',
+    };
+    const plansRaw = isMonthly ? [
+      { badge: '', title: 'Rejsningsbesvær', price: '99', unit: 'kr./md.', features: ['Receptpligtig medicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Opfølgning ved behov'] },
+      { badge: '', title: 'Hårtabsbehandling', price: '299', unit: 'kr./md.', popular: true, features: ['Recept på hårtabsmedicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Ubegrænset opfølgning'] },
+      { badge: '', title: 'Testosteronmangel', price: '299', unit: 'kr./md.', features: ['Blodprøvekontrol', 'Recept på testosteronbehandling', 'Lægelig vurdering', 'Løbende dosisjustering'] },
+      { badge: 'Kombinér og spar mest', title: 'Hårtab/testosteronmangel\n+ rejsningsbesvær', price: '349', unit: 'kr./md.', features: ['Receptpligtig medicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Opfølgning ved behov'] },
+    ] : [
+      { badge: 'Få 2 måneder gratis', title: 'Rejsningsbesvær', price: '990', unit: 'kr./år.', features: ['Receptpligtig medicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Opfølgning ved behov'] },
+      { badge: '', title: 'Hårtabsbehandling', price: '2.990', unit: 'kr./år.', popular: true, features: ['Recept på hårtabsmedicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Ubegrænset opfølgning'] },
+      { badge: 'Få 2 måneder gratis', title: 'Testosteronmangel', price: '2.990', unit: 'kr./år.', features: ['Blodprøvekontrol', 'Recept på testosteronbehandling', 'Lægelig vurdering', 'Løbende dosisjustering'] },
+      { badge: 'Kombinér og spar mest', title: 'Hårtab/testosteronmangel\n+ rejsningsbesvær', price: '3.485', unit: 'kr./år.', features: ['Receptpligtig medicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Opfølgning ved behov'] },
+    ];
+    const plansOrdered = isMobile ? [...plansRaw].sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0)) : plansRaw;
+    const plans = plansOrdered.map(stylePlan);
+
+    return {
+      ...ctaVals,
+      isMobile,
+      navDesktopDisplay: 'flex',
+      navCtaDisplay: 'flex',
+      hamburgerDisplay: 'none',
+      mobileMenuOpen: this.state.mobileMenuOpen,
+      toggleMobileMenu: () => this.setState(s => ({ mobileMenuOpen: !s.mobileMenuOpen })),
+      closeMobileMenu: () => this.setState({ mobileMenuOpen: false }),
+      heroPadding: isMobile ? '20px 24px 12px' : '80px 64px',
+      heroMinHeight: isMobile ? 'auto' : '660px',
+      heroMaxWidth: isMobile ? '58%' : '600px',
+      heroTitleSize: isMobile ? '38px' : (this.state.isNarrowDesktop ? '46px' : '64px'),
+      heroScriptSize: isMobile ? '58px' : (this.state.isNarrowDesktop ? '74px' : '104px'),
+      heroUnderlineWidth: isMobile ? '78px' : '96px',
+      heroUnderlineHeight: isMobile ? '14px' : '24px',
+      heroUnderlineBottom: isMobile ? '8px' : '14px',
+      heroDescSize: isMobile ? '17px' : '19px',
+      heroFeatureSize: isMobile ? '14px' : '17px',
+      heroBadgeMB: isMobile ? '14px' : '32px',
+      heroH1MB: isMobile ? '16px' : '40px',
+      heroUlMB: isMobile ? '16px' : '32px',
+      heroUlGap: isMobile ? '8px' : '14px',
+      cta1Width: isMobile ? 'auto' : '100%',
+      cta1FontSize: isMobile ? '13px' : '18px',
+      cta1Padding: isMobile ? '10px 10px 10px 18px' : '16px 16px 16px 30px',
+      heroBgPos: isMobile ? '115% 70%' : 'right center',
+      heroSectionBg: isMobile ? '#e7e3df' : '#e7e3df',
+      heroBgOverlay: this.state.isNarrowDesktop ? 'linear-gradient(90deg, rgba(231,227,223,0.98) 0%, rgba(231,227,223,0.98) 55%, rgba(231,227,223,0.3) 78%, rgba(231,227,223,0) 92%)' : 'transparent',
+      heroMaxWidth2: this.state.isNarrowDesktop ? '420px' : (isMobile ? '100%' : '600px'),
+      isDesktop: !isMobile,
+      sectionPadding: isMobile ? '28px 10px 16px' : '64px 64px',
+      behandlingerGridCols: isMobile ? '1fr 1fr' : '1fr 1fr',
+      cardImgFit: 'contain',
+      behandlingerDisplay: 'grid',
+      behandlingerGap: isMobile ? '8px' : '32px',
+      behandlingerMarginX: isMobile ? '0 -16px' : '0 auto',
+      behandlingerOverflowX: 'visible',
+      behandlingerSnap: 'none',
+      behandlingerPad: isMobile ? '0 8px' : '0',
+      behandlingerCardFlex: '1',
+      behandlingerSnapAlign: 'none',
+      cardImgHeight: isMobile ? '210px' : '320px',
+      cardSidePad: isMobile ? '16px' : '24px',
+      cardTitleTopMB: isMobile ? '20px' : '28px',
+      cardTitleSize: isMobile ? '20px' : '26px',
+      cardTitleMB: isMobile ? '8px' : '10px',
+      cardDescSize: isMobile ? '13px' : '15px',
+      cardDescMB: isMobile ? '14px' : '20px',
+      cardBottomPad: isMobile ? '24px' : '32px',
+      cardMinHeight: 'auto',
+      h2Size: isMobile ? '30px' : '42px',
+      h2Margin: isMobile ? '0 0 40px' : '0 0 88px',
+      stepsGridCols: isMobile ? '1fr' : 'repeat(4,1fr)',
+      stepsGapV: isMobile ? '12px' : '36px',
+      saadanFungPT: isMobile ? '20px' : '48px',
+      saadanFungPB: isMobile ? '0px' : '64px',
+      saadanFungCardPad: isMobile ? '20px 20px 0' : '56px 48px',
+      whyTitleSize: isMobile ? '26px' : '40px',
+      whyTitleMB: isMobile ? '20px' : '36px',
+      whyListMB: isMobile ? '24px' : '40px',
+      whyGap: isMobile ? '16px' : '24px',
+      whyItemSize: isMobile ? '15px' : '18px',
+      whyIconSize: isMobile ? '26px' : '32px',
+      priserPT: isMobile ? '32px' : '64px',
+      priserH2Size: isMobile ? '30px' : '42px',
+      priserH2MB: isMobile ? '16px' : '40px',
+      priserPB: isMobile ? '24px' : '64px',
+      tillidPad: isMobile ? '20px 24px 16px 24px' : '64px 24px 56px 24px',
+      ctaBannerPad: isMobile ? '20px 16px 28px 16px' : '28px 24px 64px 24px',
+      stepsGapH: isMobile ? '0px' : '24px',
+      stepNumSize: isMobile ? '18px' : '38px',
+      stepNumMB: isMobile ? '12px' : '20px',
+      stepIconSize: isMobile ? '72px' : '84px',
+      stepNumDisplay: isMobile ? 'none' : 'block',
+      stepIconOuterBg: isMobile ? 'transparent' : 'radial-gradient(circle,rgba(63,158,140,0.2),rgba(63,158,140,0) 72%)',
+      stepIconBorder: isMobile ? '2px solid #3f9e8c' : '1.5px solid #3f9e8c',
+      stepIconShadow: isMobile ? 'none' : '0 8px 24px rgba(30,41,59,0.06)',
+      stepTagDisplay: isMobile ? 'none' : 'inline-block',
+      stepIconMB: isMobile ? '10px' : '60px',
+      stepTitleSize: isMobile ? '15px' : '21px',
+      stepDescSize: isMobile ? '12px' : '15px',
+      stepDescMaxW: isMobile ? '260px' : '230px',
+      stepDescMinH: isMobile ? '0' : '48px',
+      stepTagMinW: isMobile ? '0' : '130px',
+      priserGridCols: 'repeat(auto-fit,minmax(250px,1fr))',
+      priserDisplay: 'grid',
+      priserOverflowX: 'visible',
+      priserSnap: 'none',
+      priserPad: isMobile ? '24px 24px 8px' : '0',
+      priserCardFlex: '1',
+      priserSnapAlign: 'none',
+      planPadding: isMobile ? '20px' : '40px',
+      planTitleSize: isMobile ? '17px' : '24px',
+      planTitleMB: isMobile ? '12px' : '20px',
+      planPriceMB: isMobile ? '16px' : '28px',
+      planPriceSize: isMobile ? '32px' : '44px',
+      planFeatureListMB: isMobile ? '14px' : '32px',
+      planFeatureGap: isMobile ? '8px' : '16px',
+      planFeatureSize: isMobile ? '14px' : '16px',
+      planCtaPadding: isMobile ? '12px' : '16px',
+      planNoteMT: isMobile ? '6px' : '10px',
+      cta2TitleSize: isMobile ? '22px' : '32px',
+      cta2BodySize: isMobile ? '14px' : '17px',
+      cta2InnerPad: isMobile ? '24px 20px' : '40px',
+      cta2InnerGap: isMobile ? '16px' : '32px',
+      cta2Direction: isMobile ? 'column' : 'row',
+      cta2Align: isMobile ? 'stretch' : 'center',
+      cta2MaxWidth: isMobile ? '100%' : '290px',
+      footerGridCols: isMobile ? '1fr' : '1.2fr 0.8fr 1fr 1fr 1fr',
+      tillidGridCols: isMobile ? '1fr' : '1fr 1.1fr',
+      tillidImgAspect: isMobile ? '4/3' : '3/4',
+      tillidImgOrder: isMobile ? '-1' : '0',
+      behandlinger, steps, plans, megaColumns,
+      reviews: [
+        { quote: 'Hele forløbet foregik online, og recepten lå på mit apotek to dage efter. Ingen ventetid, ingen akavede samtaler.', name: 'Mikkel, 34 — hårtabsbehandling' },
+        { quote: 'Jeg var i tvivl om, hvad der passede til mig. Lægen tog sig tid til at gennemgå mulighederne, før vi valgte.', name: 'Thomas, 41 — rejsningsbesvær' }
+      ],
+      stepsRailRef: this.stepsRail,
+      stepArrowBack: (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const el = this.stepsRail.current;
+        if (el) el.scrollBy({ left: -el.clientWidth * 0.82, behavior: 'smooth' });
+      },
+      stepArrowClick: (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const el = this.stepsRail.current;
+        if (el) el.scrollBy({ left: el.clientWidth * 0.82, behavior: 'smooth' });
+      },
+      scrollStepsPrev: () => { const el = this.stepsRail.current; if (el) el.scrollBy({ left: -el.clientWidth * 0.85, behavior: 'smooth' }); },
+      scrollStepsNext: () => { const el = this.stepsRail.current; if (el) el.scrollBy({ left: el.clientWidth * 0.85, behavior: 'smooth' }); },
+      whyItems: ['Online behandling med dansk autoriseret læge', 'Recept sendt direkte til dit lokale apotek', 'Individuelt tilpasset behandlingsforløb', 'Diskret og trygt fra start til slut', 'Ubegrænset opfølgning ved behov'],
+      setMonthly: () => this.setState({ billing: 'monthly' }),
+      setYearly: () => this.setState({ billing: 'yearly' }),
+      monthlyBg: isMonthly ? '#fff' : 'transparent',
+      monthlyColor: isMonthly ? '#182839' : '#fff',
+      yearlyBg: isMonthly ? 'transparent' : '#fff',
+      yearlyColor: isMonthly ? '#fff' : '#182839',
+      showMega: this.state.showMega,
+      showMegaOn: () => this.setState({ showMega: true }),
+      showMegaOff: () => this.setState({ showMega: false }),
+      goToBehandlinger: () => {
+        const el = document.getElementById('behandlinger');
+        if (el) { const top = el.getBoundingClientRect().top + window.scrollY - 20; window.scrollTo({ top, behavior: 'smooth' }); }
+      },
+      goToProcessen: (e) => {
+        e.preventDefault();
+        const el = document.getElementById('saadan-fung');
+        if (el) { const top = el.getBoundingClientRect().top + window.scrollY - 20; window.scrollTo({ top, behavior: 'smooth' }); }
+      },
+      goToPriser: (e) => {
+        e.preventDefault();
+        const el = document.getElementById('priser');
+        if (el) { const top = el.getBoundingClientRect().top + window.scrollY - 20; window.scrollTo({ top, behavior: 'smooth' }); }
+      },
+      megaBg: this.state.showMega ? '#fff' : 'transparent',
+      megaColor: '#182839',
+    };
+  }
+}
+
+</script>
+</body>
+</html>
