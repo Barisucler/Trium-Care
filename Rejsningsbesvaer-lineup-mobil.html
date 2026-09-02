@@ -38,7 +38,7 @@
 
   <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 20px;min-height:44px;">
-      <a href="Forside-mobil.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;"><img src="assets/trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
+      <a href="Forside-mobil.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;"><img src="trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
       <button onClick="{{ toggleMobileMenu }}" style="background:none;border:none;cursor:pointer;padding:8px;display:flex;align-items:center;justify-content:center;">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
       </button>
@@ -203,10 +203,10 @@ class Component extends DCLogic {
         { name: 'Avanafil (Spedra)', rows: [ { label: 'Virkning starter', value: '15-30 min.' }, { label: 'Varighed', value: '4-6 timer' }, { label: 'Dosering', value: 'Efter behov' }, { label: 'Mad påvirker', value: 'Minimalt' } ] }
       ],
       rail: [
-        { name: 'Finasterid hårserum', scale: 'scale(1.05)', img: 'assets/haarserum-rail-new2.png', href: 'Finasterid-haarserum-mobil.html' },
-        { name: 'Dutasterid hårgel', scale: 'scale(1.15)', img: 'assets/dutasterid-haargel-rail-new.png', href: 'Dutasterid-haargel-mobil.html' },
-        { name: 'Finasterid tabletter', scale: 'scale(1.12)', img: 'assets/finasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid-mobil.html' },
-        { name: 'Dutasterid tabletter', scale: 'scale(1.12)', img: 'assets/dutasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid-mobil.html' }
+        { name: 'Finasterid hårserum', scale: 'scale(1.05)', img: 'haarserum-rail-new2.png', href: 'Finasterid-haarserum-mobil.html' },
+        { name: 'Dutasterid hårgel', scale: 'scale(1.15)', img: 'dutasterid-haargel-rail-new.png', href: 'Dutasterid-haargel-mobil.html' },
+        { name: 'Finasterid tabletter', scale: 'scale(1.12)', img: 'finasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid-mobil.html' },
+        { name: 'Dutasterid tabletter', scale: 'scale(1.12)', img: 'dutasterid-tabletter-rail-new.png', href: 'Tabletter-finasterid-eller-dutasterid-mobil.html' }
       ],
       benefitsRailRef: this.benefitsRail,
       knowRailRef: this.knowRail,
@@ -226,9 +226,9 @@ class Component extends DCLogic {
         { eyebrow: 'Fleksibelt forløb', title: 'Skift eller stop, når du vil.', desc: 'Ingen binding. Juster dosis, skift produkt eller sæt behandlingen på pause.', icon: this.icon('flex') }
       ],
       cards: this.withImgEl([
-        { name: 'Sildenafil (Viagra)', scale: 'scale(1.25)', tag: 'Mest populære', desc: 'Virker inden for 30-60 minutter og holder i op til 4-5 timer. Tages efter behov.', img: 'assets/sildenafil-lineup-new2.png', bg: '#e7e3df', href: 'Sildenafil-mobil.html' },
-        { name: 'Tadalafil (Cialis)', scale: 'scale(1.25)', tag: 'Længste virkning', desc: 'Op til 36 timers virkning — større spontanitet uden at planlægge tidspunktet.', img: 'assets/tadalafil-lineup-new2.png', bg: '#e3e6df', href: 'Tadalafil-mobil.html' },
-        { name: 'Avanafil (Spedra)', scale: 'scale(1.25)', tag: 'Hurtigste effekt', desc: 'Virker på 15-30 minutter og giver typisk færre bivirkninger end de øvrige.', img: 'assets/avanafil-lineup-new.png', bg: '#efeae4', href: 'Avanafil-mobil.html' }
+        { name: 'Sildenafil (Viagra)', scale: 'scale(1.25)', tag: 'Mest populære', desc: 'Virker inden for 30-60 minutter og holder i op til 4-5 timer. Tages efter behov.', img: 'sildenafil-lineup-new2.png', bg: '#e7e3df', href: 'Sildenafil-mobil.html' },
+        { name: 'Tadalafil (Cialis)', scale: 'scale(1.25)', tag: 'Længste virkning', desc: 'Op til 36 timers virkning — større spontanitet uden at planlægge tidspunktet.', img: 'tadalafil-lineup-new2.png', bg: '#e3e6df', href: 'Tadalafil-mobil.html' },
+        { name: 'Avanafil (Spedra)', scale: 'scale(1.25)', tag: 'Hurtigste effekt', desc: 'Virker på 15-30 minutter og giver typisk færre bivirkninger end de øvrige.', img: 'avanafil-lineup-new.png', bg: '#efeae4', href: 'Avanafil-mobil.html' }
       ])
     };
   }
