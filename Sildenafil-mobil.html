@@ -66,7 +66,7 @@
 
   <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
-      <a href="Forside-mobil.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 12px 0 0;box-sizing:border-box;"><img src="trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
+      <a href="Forside-mobil.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 12px 0 0;box-sizing:border-box;"><img src="assets/trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
       <div style="display:{{ navDesktopDisplay }};align-items:center;justify-content:center;gap:0;flex:1;">
         <a href="Forside-mobil.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
         <div onMouseEnter="{{ showMegaOn }}" onMouseLeave="{{ showMegaOff }}" style="position:relative;">
@@ -166,13 +166,13 @@
     </div>
     <div style="display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:0 24px 4px;">
       <div style="flex:0 0 82%;scroll-snap-align:center;position:relative;border-radius:24px;overflow:hidden;background:#cfd5cc;">
-        <img src="sildenafil-hero-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:340px;object-fit:cover;object-position:bottom;transform:translateY(6%) scale(1.1);display:block;">
+        <img src="assets/sildenafil-hero-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:340px;object-fit:cover;object-position:bottom;transform:translateY(6%) scale(1.1);display:block;">
         <div style="position:absolute;left:0;right:0;top:0;padding:20px;background:linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);">
           <div style="color:#fff;font-weight:600;font-size:16px;line-height:1.4;">Effekt inden for<br><span style="color:#182839;">30-60 minutter.</span></div>
         </div>
       </div>
       <div style="flex:0 0 82%;scroll-snap-align:center;position:relative;border-radius:24px;overflow:hidden;background:#cfd5cc;">
-        <img src="sildenafil-card2-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:340px;object-fit:cover;object-position:center;display:block;">
+        <img src="assets/sildenafil-card2-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:340px;object-fit:cover;object-position:center;display:block;">
         <div style="position:absolute;left:0;right:0;top:0;padding:20px;background:linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);">
           <div style="color:#fff;font-weight:600;font-size:16px;line-height:1.4;"><span style="color:#182839;">Bedst dokumenteret</span><br>behandling mod ED.</div>
         </div>
@@ -186,7 +186,7 @@
     <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:32px;line-height:1.15;margin:0;color:#182839;letter-spacing:-0.5px;">Klar.<br>Når du er.</h2>
   </section>
   <section style="background:#fff;padding:0;">
-    <img src="sildenafil-hero-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:auto;display:block;border-radius:20px;margin-top:12px;">
+    <img src="assets/sildenafil-hero-new.png" alt="Sildenafil (Viagra)" style="width:100%;height:auto;display:block;border-radius:20px;margin-top:12px;">
   </section>
   <section style="background:#fff;padding:24px 24px 40px;">
     <p style="font-size:16px;line-height:1.6;color:#4b5563;margin:0;">Sildenafil er den mest kendte og bedst dokumenterede behandling mod rejsningsbesvær. Tages efter behov 30-60 minutter før sex og virker i op til 4-5 timer. Ingen daglig rutine — kun når du har brug for det.</p>
@@ -371,8 +371,8 @@ class Component extends DCLogic {
     }));
 
     const testimonials = [
-      { title: 'Jeg er utrolig glad for mit resultat', quote: '"Jeg begyndte min behandling hos Trium Care for 6 måneder siden, og forskellen er virkelig mærkbar. Mit hår føles tykkere, og jeg har fået meget mere selvtillid tilbage."', name: 'Yakup, Trium Care kunde', beforeImg: 'before-photo-real.jpg', afterImg: 'after-photo-real.jpg', afterLabel: 'Efter 6 måneder' },
-      { title: 'Det har givet mig selvtilliden tilbage', quote: '"Jeg var skeptisk i starten, men efter 8 måneder kan jeg virkelig se forskel i hårtætheden. Processen har været nem og lægerne har været gode til at følge op."', name: 'Anders, Trium Care kunde', beforeImg: 'before-photo-case2.jpg', afterImg: 'after-photo-case2.jpg', afterLabel: 'Efter 1 måned' },
+      { title: 'Jeg er utrolig glad for mit resultat', quote: '"Jeg begyndte min behandling hos Trium Care for 6 måneder siden, og forskellen er virkelig mærkbar. Mit hår føles tykkere, og jeg har fået meget mere selvtillid tilbage."', name: 'Yakup, Trium Care kunde', beforeImg: 'assets/before-photo-real.jpg', afterImg: 'assets/after-photo-real.jpg', afterLabel: 'Efter 6 måneder' },
+      { title: 'Det har givet mig selvtilliden tilbage', quote: '"Jeg var skeptisk i starten, men efter 8 måneder kan jeg virkelig se forskel i hårtætheden. Processen har været nem og lægerne har været gode til at følge op."', name: 'Anders, Trium Care kunde', beforeImg: 'assets/before-photo-case2.jpg', afterImg: 'assets/after-photo-case2.jpg', afterLabel: 'Efter 1 måned' },
     ];
     const tIndex = this.state.testimonialIndex;
     const testimonial = testimonials[tIndex];

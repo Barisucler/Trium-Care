@@ -74,13 +74,13 @@
   <!-- NAV -->
   <nav style="background:#fff;position:sticky;top:0;overflow:visible;z-index:100;box-shadow:0 1px 0 rgba(0,0,0,0.06);">
     <div style="display:flex;align-items:center;justify-content:space-between;padding:0 40px 0 20px;">
-      <a href="Forside.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 12px 0 0;box-sizing:border-box;"><img src="trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
+      <a href="Forside.html" style="display:flex;align-items:center;"><span style="width:34px;height:34px;min-width:34px;min-height:34px;flex:0 0 34px;border:1.5px solid #182839;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 12px 0 0;box-sizing:border-box;"><img src="assets/trium-mark.png" alt="Trium Care" style="width:20px;height:20px;object-fit:contain;display:block;"></span></a>
       <div style="display:flex;align-items:center;justify-content:center;gap:0;flex:1;">
-        <a href="Forside.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
-        <a href="Forside.html#haartab" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Behandlinger</a>
-        <a href="Forside.html#saadan-fung" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Processen</a>
-        <a href="Forside.html#priser" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Priser</a>
-        <a href="Om-os.html" style="color:#182839;font-weight:400;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Om os</a>
+        <a href="Forside.html" style="font-family:'Poppins',sans-serif;color:#182839;font-weight:500;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Hjem</a>
+        <a href="Forside.html#haartab" style="font-family:'Poppins',sans-serif;color:#182839;font-weight:500;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Behandlinger</a>
+        <a href="Forside.html#saadan-fung" style="font-family:'Poppins',sans-serif;color:#182839;font-weight:500;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Processen</a>
+        <a href="Forside.html#priser" style="font-family:'Poppins',sans-serif;color:#182839;font-weight:500;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Priser</a>
+        <a href="Om-os.html" style="font-family:'Poppins',sans-serif;color:#182839;font-weight:500;font-size:14px;padding:12px 14px;white-space:nowrap;" style-hover="font-weight:700;">Om os</a>
       </div>
       <button onClick="{{ toggleMobileMenu }}" style="display:none;background:none;border:none;cursor:pointer;padding:8px;align-items:center;justify-content:center;">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#182839" stroke-width="2" stroke-linecap="round"></path></svg>
@@ -107,9 +107,9 @@
   <!-- HERO (mobil) -->
   <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ true }}">
     <section style="position:relative;background:#f2eeea;padding:44px 0 0;text-align:center;overflow:hidden;min-height:640px;">
-      <img src="hero-produkter-fuld.png" alt="Finasterid, hårserum, Viagra og Testogel" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;z-index:0;">
+      <img src="assets/hero-produkter-fuld.png" alt="Finasterid, hårserum, Viagra og Testogel" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;z-index:0;">
       <div style="position:absolute;top:4%;left:0;right:0;z-index:1;padding:0 24px;">
-        <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:10px;letter-spacing:2px;color:#3f4a58;margin-bottom:10px;">ONLINE LÆGEKLINIK FOR MÆND</div>
+        <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:10px;letter-spacing:2px;color:#3f4a58;margin-bottom:10px;"><svg width="15" height="11" viewBox="0 0 22 16" style="border-radius:2px;display:inline-block;vertical-align:-2px;margin-right:8px;flex-shrink:0;"><rect width="22" height="16" fill="#c8102e"></rect><rect x="6.4" width="3" height="16" fill="#fff"></rect><rect y="6.5" width="22" height="3" fill="#fff"></rect></svg>DANSKE LÆGER</div>
         <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Sundhed for mænd.<br>Helt enkelt.</h1>
         <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 18px;">Online behandling af hårtab,<br>rejsningsbesvær og testosteronmangel.</p>
         <div style="display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:0;">
@@ -123,46 +123,15 @@
     </section>
   </sc-if>
   <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ false }}">
-  <section style="position:relative;padding:{{ heroPadding }};min-height:{{ heroMinHeight }};display:flex;align-items:center;overflow:hidden;background:{{ heroSectionBg }};">
-    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-      <img src="hero-produkter-gruppe.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;">
-    </sc-if>
-    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-      <img src="all-products-v4.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroBgPos }};z-index:0;">
-    </sc-if>
-    <div style="position:absolute;inset:0;background:{{ heroBgOverlay }};z-index:1;"></div>
-    <div style="position:relative;z-index:2;max-width:{{ heroMaxWidth2 }};padding-bottom:0;">
-      <a href="Om-os.html" style="display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:999px;padding:12px 24px;font-weight:600;font-size:16px;margin-bottom:{{ heroBadgeMB }};color:#111827;">
-        <svg width="20" height="15" viewBox="0 0 28 20" style="flex-shrink:0;border-radius:2px;">
-          <rect width="28" height="20" fill="#c8102e"></rect>
-          <rect x="9" width="4" height="20" fill="#fff"></rect>
-          <rect y="8" width="28" height="4" fill="#fff"></rect>
-        </svg>
-        Autoriserede danske læger
-      </a>
-      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:{{ heroTitleSize }};line-height:1.08;margin:0 0 {{ heroH1MB }};color:#111827;">
-        Sundhed<br>Selvtillid<br><span style="position:relative;display:inline-block;">
-          <span style="font-family:'Mrs Saint Delafield',cursive;font-weight:400;font-size:{{ heroScriptSize }};color:#1e293b;line-height:1;padding-bottom:16px;display:inline-block;white-space:nowrap;">hver dag</span>
-          <svg width="{{ heroUnderlineWidth }}" height="{{ heroUnderlineHeight }}" viewBox="0 0 140 24" style="position:absolute;left:2px;bottom:{{ heroUnderlineBottom }};" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="underlineFade" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#1e293b" stop-opacity="1"></stop>
-                <stop offset="75%" stop-color="#1e293b" stop-opacity="1"></stop>
-                <stop offset="100%" stop-color="#1e293b" stop-opacity="0"></stop>
-              </linearGradient>
-            </defs>
-            <path d="M2 18 Q 70 6 138 8" stroke="url(#underlineFade)" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
-          </svg>
-        </span>
-      </h1>
-      <p style="font-size:{{ heroDescSize }};color:#3f4a58;margin:0 0 20px;">Evidensbaseret behandling af<br>hårtab og rejsningsbesvær.</p>
-      <ul style="list-style:none;margin:0 0 {{ heroUlMB }};padding:0;display:flex;flex-direction:column;gap:{{ heroUlGap }};font-size:{{ heroFeatureSize }};font-weight:700;color:#1f2937;">
-        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Online vurdering</li>
-        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Diskret behandling</li>
-        <li style="display:flex;align-items:center;gap:12px;"><span style="width:24px;height:24px;border-radius:50%;background:#3f9e8c;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="13" height="10" viewBox="0 0 13 10"><path d="M1 5l4 4 7-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>Recept sendt til dit lokale apotek</li>
-      </ul>
-      <a href="Kontakt.html" style="display:flex;justify-content:center;align-items:center;width:{{ cta1Width }};max-width:320px;margin:0 auto;background:#182839;border:1px solid #182839;font-weight:700;font-size:{{ cta1FontSize }};padding:14px 20px;border-radius:999px;color:#fff;box-sizing:border-box;"><span style="display:inline-block;white-space:nowrap;margin-right:10px;">Start gratis vurdering</span><span style="width:36px;height:36px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#182839" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-      </a>
+  <section style="background:#f2eeea;background-image:url('assets/hero-produkter-desktop-v7.png');background-size:cover;background-position:center bottom;background-repeat:no-repeat;padding:40px 0 0;min-height:640px;text-align:center;overflow:hidden;">
+    <div style="max-width:900px;margin:0 auto;padding:0 48px;">
+      <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:2.2px;color:#3f4a58;margin-bottom:14px;"><svg width="17" height="12" viewBox="0 0 22 16" style="border-radius:2px;display:inline-block;vertical-align:-2px;margin-right:8px;flex-shrink:0;"><rect width="22" height="16" fill="#c8102e"></rect><rect x="6.4" width="3" height="16" fill="#fff"></rect><rect y="6.5" width="22" height="3" fill="#fff"></rect></svg>DANSKE LÆGER</div>
+      <h1 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:44px;line-height:1.06;letter-spacing:-1.6px;margin:0 0 14px;color:#182839;">Sundhed for mænd.<br>Helt enkelt.</h1>
+      <p style="font-size:17px;line-height:1.5;color:#4b5563;margin:0 0 24px;">Online behandling af hårtab, rejsningsbesvær og testosteronmangel.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:24px;margin-bottom:28px;">
+        <a href="Kontakt.html" style="display:inline-flex;align-items:center;justify-content:center;background:#182839;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;padding:15px 38px;border-radius:999px;white-space:nowrap;">Start gratis vurdering</a>
+        <a href="#haartab" style="font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;color:#182839;text-decoration:underline;text-underline-offset:4px;">Se behandlinger</a>
+      </div>
     </div>
   </section>
   </sc-if>
@@ -171,7 +140,7 @@
 
 
   <div style="height:12px;background:#fff;"></div>
-  <section id="haartab" style="padding:0;position:relative;width:100%;min-height:760px;background-image:url('haartab-hero-produkter-v3.jpg');background-size:auto 78%;background-position:center;background-repeat:no-repeat;background-color:#e9e1df;overflow:hidden;">
+  <section id="haartab" style="padding:0;position:relative;width:100%;min-height:640px;background-color:#efe9e5;background-image:url('assets/haartab-hero-produkter-v6.png');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#e9e1df;overflow:hidden;">
     <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
       <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Hårtab</h2>
       <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Tabletter, hårserum og hårgel mod<br>arveligt hårtab — vurderet af en læge.</p>
@@ -183,7 +152,7 @@
   </section>
 
   <div style="height:12px;background:#fff;"></div>
-  <section id="rejsningsbesvaer" style="padding:0;position:relative;width:100%;min-height:760px;background-color:#f1f4ee;background-image:url('ed-hero-boxes-v3.png');background-size:auto 78%;background-position:center;background-repeat:no-repeat;overflow:hidden;">
+  <section id="rejsningsbesvaer" style="padding:0;position:relative;width:100%;min-height:640px;background-color:#e3e5e0;background-image:url('assets/ed-hero-boxes-v6.png');background-size:cover;background-position:center;background-repeat:no-repeat;overflow:hidden;">
     <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
       <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Rejsningsbesvær</h2>
       <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Viagra og Cialis — receptpligtig<br>behandling vurderet af en dansk læge.</p>
@@ -195,7 +164,7 @@
   </section>
 
   <div style="height:12px;background:#fff;"></div>
-  <section id="behandlinger" style="padding:0;position:relative;width:100%;min-height:760px;background-image:url('testogel-hero-new3.png');background-size:auto 78%;background-position:center;background-repeat:no-repeat;background-color:#e4ecf5;overflow:hidden;">
+  <section id="behandlinger" style="padding:0;position:relative;width:100%;min-height:640px;background-color:#c5d6ec;background-image:url('assets/testogel-hero-new9.png');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#e4ecf5;overflow:hidden;">
     <div style="position:absolute;left:0;right:0;top:7%;text-align:center;padding:0 24px;">
       <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:-0.9px;margin:0 0 10px;color:#182839;">Testosteronmangel</h2>
       <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 16px;">Træthed, lavere libido og dårligere<br>restitution kan skyldes lavt testosteron.</p>
@@ -217,17 +186,17 @@
   <!-- SÅDAN FUNGERER DET -->
   <section id="saadan-fung" style="background:#f5f5f7;padding:{{ saadanFungPT }} 0 {{ saadanFungPB }};">
     <div style="padding:0 20px;">
-      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ h2Size }};margin:0 0 10px;color:#182839;letter-spacing:-0.3px;">Kom i gang nemt og bekvemt<span style="color:#182839;">.</span></h2>
-      <p style="font-size:14px;color:#4b5563;margin:0 0 28px;">Fire enkle trin. 100 % online.</p>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:29px;line-height:1.1;margin:0 0 8px;color:#182839;letter-spacing:-0.9px;">Kom i gang nemt og bekvemt<span style="color:#182839;">.</span></h2>
+      <p style="font-size:13px;line-height:1.4;color:#4b5563;margin:0 0 18px;">Fire enkle trin. 100 % online.</p>
     </div>
     <div ref="{{ stepsRailRef }}" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:8px 20px 16px;">
       <sc-for list="{{ steps }}" as="item" hint-placeholder-count="4">
-        <a href="{{ item.href }}" style="background:#fff;border-radius:28px;padding:28px 26px 30px;display:flex;flex-direction:column;text-align:left;color:inherit;">
-          <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#9a9a9a;margin-bottom:16px;">0{{ item.n }}</div>
-          <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;line-height:1.15;letter-spacing:-0.4px;color:#182839;margin-bottom:12px;" data-step-title="">{{ item.title }}</div>
-          <p style="font-size:15px;line-height:1.5;color:#4b5563;margin:0 0 6px;">{{ item.desc }}</p>
+        <a href="{{ item.href }}" style="background:#fff;border-radius:24px;padding:20px 20px 20px;display:flex;flex-direction:column;text-align:left;color:inherit;">
+          <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color:#9a9a9a;margin-bottom:10px;">0{{ item.n }}</div>
+          <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;line-height:1.2;letter-spacing:-0.4px;color:#182839;margin-bottom:8px;" data-step-title="">{{ item.title }}</div>
+          <p style="font-size:14px;line-height:1.45;color:#4b5563;margin:0 0 6px;min-height:61px;">{{ item.desc }}</p>
           <div style="font-size:13px;font-weight:700;color:#0a66c2;">{{ item.tag }}</div>
-          <div style="display:flex;align-items:center;justify-content:center;padding-top:20px;color:#182839;">
+          <div style="display:flex;align-items:center;justify-content:center;padding-top:12px;color:#182839;">
             {{ item.icon }}
           </div>
         </a>
@@ -239,19 +208,19 @@
   <div style="height:12px;background:#fff;"></div>
   <!-- PRISER -->
   <section id="priser" style="background:#e9edee;padding:{{ priserPT }} 24px {{ priserPB }} 24px;text-align:center;">
-    <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ priserH2Size }};margin:0 0 {{ priserH2MB }};color:#182839;letter-spacing:-0.3px;">Vælg din plan</h2>
-    <div style="display:inline-flex;background:#182839;border-radius:999px;padding:6px;margin-bottom:48px;">
+    <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ priserH2Size }};line-height:1.1;margin:0 0 {{ priserH2MB }};color:#182839;letter-spacing:-0.9px;">Vælg din plan</h2>
+    <div style="display:inline-flex;background:#182839;border-radius:999px;padding:6px;margin-bottom:24px;">
       <button onClick="{{ setMonthly }}" style="border:none;cursor:pointer;padding:9px 22px;border-radius:999px;font-weight:600;font-size:14px;font-family:'Poppins',sans-serif;background:{{ monthlyBg }};color:{{ monthlyColor }};">Månedlig</button>
       <button onClick="{{ setYearly }}" style="border:none;cursor:pointer;padding:9px 22px;border-radius:999px;font-weight:600;font-size:14px;font-family:'Poppins',sans-serif;background:{{ yearlyBg }};color:{{ yearlyColor }};">Årlig</button>
     </div>
-    <div style="display:{{ priserDisplay }};grid-template-columns:{{ priserGridCols }};gap:24px;max-width:1200px;margin:0 auto;text-align:left;overflow-x:{{ priserOverflowX }};scroll-snap-type:{{ priserSnap }};padding:{{ priserPad }};-webkit-overflow-scrolling:touch;">
+    <div ref="{{ priserRailRef }}" style="display:flex;gap:24px;max-width:1200px;margin:0 auto;text-align:left;overflow-x:auto;scroll-snap-type:x mandatory;padding:{{ priserPad }};-webkit-overflow-scrolling:touch;scrollbar-width:none;">
       <sc-for list="{{ plans }}" as="plan" hint-placeholder-count="4">
-        <div style="background:{{ plan.cardBg }};border:{{ plan.border }};border-radius:20px;padding:{{ planPadding }};min-width:0;display:flex;flex-direction:column;position:relative;transform:{{ plan.scale }};box-shadow:{{ plan.shadow }};transition:transform .2s ease,box-shadow .2s ease;flex:{{ priserCardFlex }};scroll-snap-align:{{ priserSnapAlign }};" style-hover="transform:{{ plan.scale }} translateY(-8px);box-shadow:0 20px 44px rgba(30,41,59,0.18);">
+        <div style="background:{{ plan.cardBg }};border:{{ plan.border }};border-radius:20px;padding:{{ planPadding }};min-width:0;display:flex;flex-direction:column;position:relative;transform:{{ plan.scale }};box-shadow:{{ plan.shadow }};transition:box-shadow .2s ease;will-change:transform;flex:{{ priserCardFlex }};scroll-snap-align:center;">
           <sc-if value="{{ plan.popular }}" hint-placeholder-val="{{ false }}">
-            <span style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#3f9e8c;color:#fff;font-size:13px;font-weight:700;padding:6px 18px;border-radius:999px;white-space:nowrap;">✓ Mest populære</span>
+            <span style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#3f9e8c;color:#fff;font-size:11px;font-weight:700;padding:5px 14px;border-radius:999px;white-space:nowrap;">Mest populære</span>
           </sc-if>
           <sc-if value="{{ plan.badge }}" hint-placeholder-val="{{ false }}">
-            <span style="display:inline-block;background:{{ plan.badgeBg }};color:{{ plan.badgeColor }};font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px;margin-bottom:20px;width:fit-content;">{{ plan.badge }}</span>
+            <span style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:{{ plan.badgeBg }};color:{{ plan.badgeColor }};font-size:11px;font-weight:700;padding:5px 14px;border-radius:999px;white-space:nowrap;">{{ plan.badge }}</span>
           </sc-if>
           <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:{{ planTitleSize }};margin:0 0 {{ planTitleMB }};color:{{ plan.textColor }};overflow-wrap:break-word;white-space:pre-line;">{{ plan.title }}</h3>
           <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:{{ planPriceMB }};">
@@ -266,8 +235,8 @@
               </li>
             </sc-for>
           </ul>
-          <a href="Kontakt.html" style="align-self:center;display:inline-flex;align-items:center;justify-content:center;background:{{ plan.ctaBg }};color:{{ plan.ctaColor }};font-weight:600;font-size:15px;padding:12px 28px;border-radius:999px;white-space:nowrap;">Bliv medlem</a>
-          <p style="font-size:12px;color:{{ plan.noteColor }};text-align:center;margin:{{ planNoteMT }} 0 0;">Medicin betales separat på apotek</p>
+          <a href="Kontakt.html" style="align-self:center;display:inline-flex;align-items:center;justify-content:center;background:{{ plan.ctaBg }};color:{{ plan.ctaColor }};font-weight:600;font-size:13px;padding:10px 22px;border-radius:999px;white-space:nowrap;">Bliv medlem</a>
+          <p style="font-size:12px;color:{{ plan.noteColor }};text-align:center;margin:{{ planNoteMT }} 0 0;">{{ plan.note }}</p>
         </div>
       </sc-for>
     </div>
@@ -313,8 +282,53 @@
 class Component extends DCLogic {
   state = { billing: 'monthly', showMega: false , hoveredCta: null, isMobile: true, mobileMenuOpen: false };
   stepsRail = React.createRef();
+  priserRail = React.createRef();
+
+  priserNextBtn = React.createRef();
+  priserPrevBtn = React.createRef();
+
+  initPriserRail(tries) {
+    const el = this.priserRail.current;
+    const n = tries || 0;
+    if (!el || el.children.length < 2 || !el.children[1].offsetWidth) {
+      if (n < 40) setTimeout(() => this.initPriserRail(n + 1), 100);
+      return;
+    }
+    const cards = Array.from(el.children);
+    if (this.__priserScroll) el.removeEventListener('scroll', this.__priserScroll);
+    const paint = () => {
+      const mid = el.scrollLeft + el.clientWidth / 2;
+      cards.forEach((c) => {
+        const cc = c.offsetLeft + c.offsetWidth / 2;
+        const d = Math.min(1, Math.abs(cc - mid) / (c.offsetWidth + 24));
+        c.style.transform = 'scale(' + (1 - 0.14 * d) + ')';
+        c.style.opacity = String(1 - 0.35 * d);
+        c.style.zIndex = String(10 - Math.round(d * 10));
+      });
+    };
+    let raf = 0;
+    this.__priserScroll = () => { if (raf) return; raf = requestAnimationFrame(() => { raf = 0; paint(); }); };
+    el.addEventListener('scroll', this.__priserScroll, { passive: true });
+    const center = () => {
+      const c = cards[1] || cards[0];
+      el.scrollLeft = c.offsetLeft - (el.clientWidth - c.offsetWidth) / 2;
+      paint();
+    };
+    center();
+    requestAnimationFrame(center);
+    if (this.__priserResize) window.removeEventListener('resize', this.__priserResize);
+    this.__priserResize = () => center();
+    window.addEventListener('resize', this.__priserResize);
+  }
 
   componentDidMount() {
+    this.initPriserRail(0);
+    this.__syncViewport = () => {
+      const m = window.innerWidth <= 860;
+      if (this.state.isMobile !== m) this.setState({ isMobile: m });
+    };
+    this.__syncViewport();
+    window.addEventListener('resize', this.__syncViewport);
         if (window.location.hash) {
       const targetId = window.location.hash.slice(1);
       setTimeout(() => {
@@ -375,10 +389,10 @@ class Component extends DCLogic {
         viden: [{ label: 'Hvad er rejsningsbesvær?', href: 'Hvad-er-rejsningsbesvaer.html' }, { label: 'Er erektionsproblemer tegn på sygdom?', href: 'Er-erektionsproblemer-tegn-paa-sygdom.html' }, { label: 'Sådan virker tadalafil og sildenafil', href: 'Saadan-virker-tadalafil.html' }, { label: 'Sildenafil vs. tadalafil', href: 'Sildenafil-vs-tadalafil.html' }] },
     ];
     const behandlinger = [
-      { title: 'Hårtab', desc: 'Dokumenterede behandlinger mod hårtab til mænd.', href: 'Haartab-lineup.html', hasImg: true, img: 'haarserum-bottle-v3.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '0%', imgScale: 0.7, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
-      { title: 'Rejsningsbesvær', desc: 'Effektiv medicin, der hjælper dig videre.', href: 'Rejsningsbesvaer-lineup.html', hasImg: true, img: 'sildenafil-box-v2.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '2%', imgScale: 1, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
+      { title: 'Hårtab', desc: 'Dokumenterede behandlinger mod hårtab til mænd.', href: 'Haartab-lineup.html', hasImg: true, img: 'assets/haarserum-bottle-v3.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '0%', imgScale: 0.7, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
+      { title: 'Rejsningsbesvær', desc: 'Effektiv medicin, der hjælper dig videre.', href: 'Rejsningsbesvaer-lineup.html', hasImg: true, img: 'assets/sildenafil-box-v2.png', imgBg: '#ececea', cardBg: '#ececea', imgOffset: '2%', imgScale: 1, effScale: 1, ready: true, imgObjectPos: 'center center', imgTransform: 'none' },
     ];
-    const iconSvg = (path) => React.createElement('svg', { width: 56, height: 56, viewBox: '0 0 24 24', fill: 'none' }, React.createElement('path', { d: path, stroke: '#0a66c2', strokeWidth: 1.25, strokeLinecap: 'round', strokeLinejoin: 'round' }));
+    const iconSvg = (path) => React.createElement('svg', { width: 56, height: 56, viewBox: '0 0 24 24', fill: 'none' }, React.createElement('path', { d: path, stroke: '#3f9e8c', strokeWidth: 1.25, strokeLinecap: 'round', strokeLinejoin: 'round' }));
     const steps = [
       { n: 1, title: 'Book online', desc: 'Besvar få spørgsmål om dine symptomer.', tag: '2 minutter', href: 'Kontakt.html', showBack: false, icon: iconSvg('M4 5h16M4 5v16h16V5M4 5H2m18 0h2M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2'), hasLine: false },
       { n: 2, title: 'Tal med en læge', desc: 'Din behandling vurderes af en dansk autoriseret læge.', tag: 'STPS-registreret', href: '#saadan-fung', showBack: true, icon: iconSvg('M3 7a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7zM15 10.5l5-3v9l-5-3'), hasLine: true },
@@ -406,7 +420,9 @@ class Component extends DCLogic {
       { badge: 'Kombinér og spar mest', title: 'Hårtab/testosteronmangel\n+ rejsningsbesvær', price: '3.485', unit: 'kr./år.', features: ['Receptpligtig medicin', 'Lægelig vurdering', 'Individuelt behandlingsforløb', 'Opfølgning ved behov'] },
     ];
     const plansOrdered = isMobile ? [...plansRaw].sort((a, b) => (b.popular ? 1 : 0) - (a.popular ? 1 : 0)) : plansRaw;
-    const plans = plansOrdered.map(stylePlan);
+    const plans = plansOrdered.map(stylePlan).map((pl) => Object.assign({}, pl, {
+      note: /testosteron/i.test(pl.title) ? 'Medicin og blodprøver betales separat' : 'Medicin betales separat på apotek'
+    }));
 
     return {
       ...ctaVals,
@@ -463,8 +479,8 @@ class Component extends DCLogic {
       h2Margin: isMobile ? '0 0 40px' : '0 0 88px',
       stepsGridCols: isMobile ? '1fr' : 'repeat(4,1fr)',
       stepsGapV: isMobile ? '12px' : '36px',
-      saadanFungPT: isMobile ? '20px' : '48px',
-      saadanFungPB: isMobile ? '0px' : '64px',
+      saadanFungPT: isMobile ? '20px' : '24px',
+      saadanFungPB: isMobile ? '0px' : '24px',
       saadanFungCardPad: isMobile ? '20px 20px 0' : '56px 48px',
       whyTitleSize: isMobile ? '26px' : '40px',
       whyTitleMB: isMobile ? '20px' : '36px',
@@ -472,9 +488,10 @@ class Component extends DCLogic {
       whyGap: isMobile ? '16px' : '24px',
       whyItemSize: isMobile ? '15px' : '18px',
       whyIconSize: isMobile ? '26px' : '32px',
-      priserPT: isMobile ? '32px' : '64px',
-      priserH2Size: isMobile ? '30px' : '42px',
-      priserH2MB: isMobile ? '16px' : '40px',
+      priserRailRef: this.priserRail,
+      priserPT: isMobile ? '32px' : '24px',
+      priserH2Size: isMobile ? '30px' : '29px',
+      priserH2MB: isMobile ? '16px' : '16px',
       priserPB: isMobile ? '24px' : '64px',
       tillidPad: isMobile ? '20px 24px 16px 24px' : '64px 24px 56px 24px',
       ctaBannerPad: isMobile ? '20px 16px 28px 16px' : '28px 24px 64px 24px',
@@ -493,21 +510,21 @@ class Component extends DCLogic {
       stepDescMaxW: isMobile ? '260px' : '230px',
       stepDescMinH: isMobile ? '0' : '48px',
       stepTagMinW: isMobile ? '0' : '130px',
-      priserGridCols: 'repeat(auto-fit,minmax(250px,1fr))',
-      priserDisplay: 'grid',
-      priserOverflowX: 'visible',
-      priserSnap: 'none',
-      priserPad: isMobile ? '24px 24px 8px' : '0',
-      priserCardFlex: '1',
-      priserSnapAlign: 'none',
-      planPadding: isMobile ? '20px' : '40px',
-      planTitleSize: isMobile ? '17px' : '24px',
-      planTitleMB: isMobile ? '12px' : '20px',
+      priserGridCols: 'repeat(4,1fr)',
+      priserDisplay: 'flex',
+      priserOverflowX: 'auto',
+      priserSnap: 'x mandatory',
+      priserPad: isMobile ? '24px calc(50% - 150px) 8px' : '28px calc(50% - 150px) 24px',
+      priserCardFlex: isMobile ? '0 0 82%' : '0 0 300px',
+      priserSnapAlign: 'center',
+      planPadding: isMobile ? '20px' : '20px',
+      planTitleSize: isMobile ? '17px' : '15px',
+      planTitleMB: isMobile ? '12px' : '10px',
       planPriceMB: isMobile ? '16px' : '28px',
       planPriceSize: isMobile ? '32px' : '44px',
-      planFeatureListMB: isMobile ? '14px' : '32px',
-      planFeatureGap: isMobile ? '8px' : '16px',
-      planFeatureSize: isMobile ? '14px' : '16px',
+      planFeatureListMB: isMobile ? '14px' : '12px',
+      planFeatureGap: isMobile ? '8px' : '6px',
+      planFeatureSize: isMobile ? '14px' : '12px',
       planCtaPadding: isMobile ? '12px' : '16px',
       planNoteMT: isMobile ? '6px' : '10px',
       cta2TitleSize: isMobile ? '22px' : '32px',
